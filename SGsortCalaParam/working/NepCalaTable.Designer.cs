@@ -46,23 +46,23 @@
             this.zonghengbi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.controlNavigator1 = new DevExpress.XtraEditors.ControlNavigator();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.textEdit_jsdaoshu = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit_zongdaoshu = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit_paoci = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit_zongdianshu = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit_paoci = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit_zongdaoshu = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit_jsdaoshu = new DevExpress.XtraEditors.TextEdit();
             this.navigationPane1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdianshu.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoci.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdaoshu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_jsdaoshu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdaoshu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoci.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdianshu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // navigationPane1
@@ -131,6 +131,7 @@
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.gridControl1.Load += new System.EventHandler(this.gridControl1_Load);
             // 
             // gridView1
             // 
@@ -146,6 +147,7 @@
             this.zonghengbi});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
+            this.gridView1.OptionsBehavior.AllowAddRows = DevExpress.Utils.DefaultBoolean.True;
             // 
             // bushe_xianshu
             // 
@@ -153,62 +155,79 @@
             this.bushe_xianshu.Name = "bushe_xianshu";
             this.bushe_xianshu.Visible = true;
             this.bushe_xianshu.VisibleIndex = 0;
+            this.bushe_xianshu.Width = 92;
             // 
             // bushe_daoshu
             // 
             this.bushe_daoshu.Caption = "布设接收线单线接收道数";
             this.bushe_daoshu.Name = "bushe_daoshu";
+            this.bushe_daoshu.OptionsColumn.AllowEdit = false;
             this.bushe_daoshu.Visible = true;
             this.bushe_daoshu.VisibleIndex = 1;
+            this.bushe_daoshu.Width = 147;
             // 
             // bushe_zongdaoshu
             // 
             this.bushe_zongdaoshu.Caption = "布设排列总道数";
             this.bushe_zongdaoshu.Name = "bushe_zongdaoshu";
+            this.bushe_zongdaoshu.OptionsColumn.AllowEdit = false;
             this.bushe_zongdaoshu.Visible = true;
             this.bushe_zongdaoshu.VisibleIndex = 2;
+            this.bushe_zongdaoshu.Width = 123;
             // 
             // banqian_daoshu
             // 
             this.banqian_daoshu.Caption = "搬迁道数";
             this.banqian_daoshu.Name = "banqian_daoshu";
+            this.banqian_daoshu.OptionsColumn.AllowEdit = false;
             this.banqian_daoshu.Visible = true;
             this.banqian_daoshu.VisibleIndex = 3;
+            this.banqian_daoshu.Width = 77;
             // 
             // ke_caiji
             // 
             this.ke_caiji.Caption = "可采集炮次";
             this.ke_caiji.Name = "ke_caiji";
+            this.ke_caiji.OptionsColumn.AllowEdit = false;
             this.ke_caiji.Visible = true;
             this.ke_caiji.VisibleIndex = 4;
+            this.ke_caiji.Width = 77;
             // 
             // banjia_daoshu
             // 
             this.banjia_daoshu.Caption = "搬家道数";
             this.banjia_daoshu.Name = "banjia_daoshu";
+            this.banjia_daoshu.OptionsColumn.AllowEdit = false;
             this.banjia_daoshu.Visible = true;
             this.banjia_daoshu.VisibleIndex = 5;
+            this.banjia_daoshu.Width = 77;
             // 
             // hengxiangchang
             // 
             this.hengxiangchang.Caption = "横向长度";
             this.hengxiangchang.Name = "hengxiangchang";
+            this.hengxiangchang.OptionsColumn.AllowEdit = false;
             this.hengxiangchang.Visible = true;
             this.hengxiangchang.VisibleIndex = 6;
+            this.hengxiangchang.Width = 77;
             // 
             // zongxiangchang
             // 
             this.zongxiangchang.Caption = "纵向长度";
             this.zongxiangchang.Name = "zongxiangchang";
+            this.zongxiangchang.OptionsColumn.AllowEdit = false;
             this.zongxiangchang.Visible = true;
             this.zongxiangchang.VisibleIndex = 7;
+            this.zongxiangchang.Width = 77;
             // 
             // zonghengbi
             // 
             this.zonghengbi.Caption = "纵横比";
             this.zonghengbi.Name = "zonghengbi";
+            this.zonghengbi.OptionsColumn.AllowEdit = false;
             this.zonghengbi.Visible = true;
             this.zonghengbi.VisibleIndex = 8;
+            this.zonghengbi.Width = 82;
             // 
             // controlNavigator1
             // 
@@ -220,6 +239,7 @@
             this.controlNavigator1.Size = new System.Drawing.Size(847, 34);
             this.controlNavigator1.TabIndex = 1;
             this.controlNavigator1.Text = "controlNavigator1";
+            this.controlNavigator1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // tableLayoutPanel2
             // 
@@ -244,6 +264,34 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(847, 74);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
+            // textEdit_jsdaoshu
+            // 
+            this.textEdit_jsdaoshu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit_jsdaoshu.Location = new System.Drawing.Point(637, 40);
+            this.textEdit_jsdaoshu.Name = "textEdit_jsdaoshu";
+            this.textEdit_jsdaoshu.Properties.AutoHeight = false;
+            this.textEdit_jsdaoshu.Size = new System.Drawing.Size(207, 31);
+            this.textEdit_jsdaoshu.TabIndex = 9;
+            this.textEdit_jsdaoshu.Visible = false;
+            // 
+            // textEdit_zongdaoshu
+            // 
+            this.textEdit_zongdaoshu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit_zongdaoshu.Location = new System.Drawing.Point(172, 40);
+            this.textEdit_zongdaoshu.Name = "textEdit_zongdaoshu";
+            this.textEdit_zongdaoshu.Properties.AutoHeight = false;
+            this.textEdit_zongdaoshu.Size = new System.Drawing.Size(248, 31);
+            this.textEdit_zongdaoshu.TabIndex = 8;
+            // 
+            // textEdit_paoci
+            // 
+            this.textEdit_paoci.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit_paoci.Location = new System.Drawing.Point(637, 3);
+            this.textEdit_paoci.Name = "textEdit_paoci";
+            this.textEdit_paoci.Properties.AutoHeight = false;
+            this.textEdit_paoci.Size = new System.Drawing.Size(207, 31);
+            this.textEdit_paoci.TabIndex = 7;
+            // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -256,6 +304,7 @@
             this.labelControl6.Size = new System.Drawing.Size(196, 31);
             this.labelControl6.TabIndex = 5;
             this.labelControl6.Text = "布设接受线单线接收道数";
+            this.labelControl6.Visible = false;
             // 
             // labelControl3
             // 
@@ -305,33 +354,6 @@
             this.textEdit_zongdianshu.Size = new System.Drawing.Size(248, 31);
             this.textEdit_zongdianshu.TabIndex = 6;
             // 
-            // textEdit_paoci
-            // 
-            this.textEdit_paoci.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit_paoci.Location = new System.Drawing.Point(637, 3);
-            this.textEdit_paoci.Name = "textEdit_paoci";
-            this.textEdit_paoci.Properties.AutoHeight = false;
-            this.textEdit_paoci.Size = new System.Drawing.Size(207, 31);
-            this.textEdit_paoci.TabIndex = 7;
-            // 
-            // textEdit_zongdaoshu
-            // 
-            this.textEdit_zongdaoshu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit_zongdaoshu.Location = new System.Drawing.Point(172, 40);
-            this.textEdit_zongdaoshu.Name = "textEdit_zongdaoshu";
-            this.textEdit_zongdaoshu.Properties.AutoHeight = false;
-            this.textEdit_zongdaoshu.Size = new System.Drawing.Size(248, 31);
-            this.textEdit_zongdaoshu.TabIndex = 8;
-            // 
-            // textEdit_jsdaoshu
-            // 
-            this.textEdit_jsdaoshu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit_jsdaoshu.Location = new System.Drawing.Point(637, 40);
-            this.textEdit_jsdaoshu.Name = "textEdit_jsdaoshu";
-            this.textEdit_jsdaoshu.Properties.AutoHeight = false;
-            this.textEdit_jsdaoshu.Size = new System.Drawing.Size(207, 31);
-            this.textEdit_jsdaoshu.TabIndex = 9;
-            // 
             // NepCalaTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -345,10 +367,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdianshu.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoci.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdaoshu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_jsdaoshu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdaoshu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoci.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdianshu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

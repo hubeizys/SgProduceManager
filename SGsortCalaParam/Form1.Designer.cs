@@ -58,9 +58,14 @@
             this.muban_heng = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemTextEdit9 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.bushe_jieshouxianshu = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemTextEdit10 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.bushe_jifaxianshu = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemTextEdit11 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.ribbonPageGroup6 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
             this.styleController1 = new DevExpress.XtraEditors.StyleController(this.components);
@@ -70,6 +75,11 @@
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
             this.barEditItem3 = new DevExpress.XtraBars.BarEditItem();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).BeginInit();
@@ -80,11 +90,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.styleController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.workspace1)).BeginInit();
             this.workspace1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
+            this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonPage1
@@ -179,9 +193,12 @@
             this.mobanpao,
             this.muban_zong,
             this.muban_heng,
-            this.barButtonItem6});
+            this.barButtonItem6,
+            this.bushe_jieshouxianshu,
+            this.bushe_jifaxianshu,
+            this.barButtonItem7});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 20;
+            this.ribbonControl1.MaxItemId = 23;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -195,7 +212,9 @@
             this.repositoryItemTextEdit6,
             this.repositoryItemTextEdit7,
             this.repositoryItemTextEdit8,
-            this.repositoryItemTextEdit9});
+            this.repositoryItemTextEdit9,
+            this.repositoryItemTextEdit10,
+            this.repositoryItemTextEdit11});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2010;
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.True;
@@ -332,11 +351,37 @@
             | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
             this.barButtonItem6.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem6_ItemClick);
             // 
+            // bushe_jieshouxianshu
+            // 
+            resources.ApplyResources(this.bushe_jieshouxianshu, "bushe_jieshouxianshu");
+            this.bushe_jieshouxianshu.Edit = this.repositoryItemTextEdit10;
+            this.bushe_jieshouxianshu.Id = 20;
+            this.bushe_jieshouxianshu.Name = "bushe_jieshouxianshu";
+            // 
+            // repositoryItemTextEdit10
+            // 
+            resources.ApplyResources(this.repositoryItemTextEdit10, "repositoryItemTextEdit10");
+            this.repositoryItemTextEdit10.Name = "repositoryItemTextEdit10";
+            // 
+            // bushe_jifaxianshu
+            // 
+            resources.ApplyResources(this.bushe_jifaxianshu, "bushe_jifaxianshu");
+            this.bushe_jifaxianshu.Edit = this.repositoryItemTextEdit11;
+            this.bushe_jifaxianshu.Id = 21;
+            this.bushe_jifaxianshu.Name = "bushe_jifaxianshu";
+            this.bushe_jifaxianshu.Visibility = DevExpress.XtraBars.BarItemVisibility.Never;
+            // 
+            // repositoryItemTextEdit11
+            // 
+            resources.ApplyResources(this.repositoryItemTextEdit11, "repositoryItemTextEdit11");
+            this.repositoryItemTextEdit11.Name = "repositoryItemTextEdit11";
+            // 
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup3,
             this.ribbonPageGroup4,
+            this.ribbonPageGroup6,
             this.ribbonPageGroup5});
             this.ribbonPage2.Image = ((System.Drawing.Image)(resources.GetObject("ribbonPage2.Image")));
             this.ribbonPage2.Name = "ribbonPage2";
@@ -361,9 +406,17 @@
             this.ribbonPageGroup4.Name = "ribbonPageGroup4";
             resources.ApplyResources(this.ribbonPageGroup4, "ribbonPageGroup4");
             // 
+            // ribbonPageGroup6
+            // 
+            this.ribbonPageGroup6.ItemLinks.Add(this.bushe_jieshouxianshu);
+            this.ribbonPageGroup6.ItemLinks.Add(this.bushe_jifaxianshu);
+            this.ribbonPageGroup6.Name = "ribbonPageGroup6";
+            resources.ApplyResources(this.ribbonPageGroup6, "ribbonPageGroup6");
+            // 
             // ribbonPageGroup5
             // 
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem6);
+            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem7);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             resources.ApplyResources(this.ribbonPageGroup5, "ribbonPageGroup5");
             // 
@@ -393,11 +446,16 @@
             // 
             // nepCalaTable1
             // 
+            this.nepCalaTable1.CJPaoco = "";
             resources.ApplyResources(this.nepCalaTable1, "nepCalaTable1");
+            this.nepCalaTable1.GDDaoshu = "";
+            this.nepCalaTable1.JSDaoshu = "";
+            this.nepCalaTable1.JSDianshu = "";
             this.nepCalaTable1.Name = "nepCalaTable1";
             // 
             // xtraTabPage2
             // 
+            this.xtraTabPage2.Controls.Add(this.dataGridView1);
             this.xtraTabPage2.Name = "xtraTabPage2";
             resources.ApplyResources(this.xtraTabPage2, "xtraTabPage2");
             // 
@@ -415,6 +473,39 @@
             this.barEditItem3.Id = 9;
             this.barEditItem3.Name = "barEditItem3";
             // 
+            // barEditItem1
+            // 
+            resources.ApplyResources(this.barEditItem1, "barEditItem1");
+            this.barEditItem1.Edit = this.repositoryItemTextEdit7;
+            this.barEditItem1.Id = 16;
+            this.barEditItem1.Name = "barEditItem1";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 23;
+            // 
+            // Column1
+            // 
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            resources.ApplyResources(this.Column2, "Column2");
+            this.Column2.Name = "Column2";
+            // 
+            // barButtonItem7
+            // 
+            resources.ApplyResources(this.barButtonItem7, "barButtonItem7");
+            this.barButtonItem7.Id = 22;
+            this.barButtonItem7.Name = "barButtonItem7";
+            // 
             // Form1
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -424,6 +515,7 @@
             this.Controls.Add(this.ribbonControl1);
             this.Name = "Form1";
             this.Ribbon = this.ribbonControl1;
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).EndInit();
@@ -434,11 +526,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.styleController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.workspace1)).EndInit();
             this.workspace1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
+            this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,6 +582,16 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup4;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup5;
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup6;
+        private DevExpress.XtraBars.BarEditItem bushe_jieshouxianshu;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit10;
+        private DevExpress.XtraBars.BarEditItem barEditItem1;
+        private DevExpress.XtraBars.BarEditItem bushe_jifaxianshu;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit11;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem7;
     }
 }
 
