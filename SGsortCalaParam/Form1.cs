@@ -28,10 +28,24 @@ namespace SGsortCalaParam
         #region 总接收点数 =接收线数*接收点数
         private void Get总接收点数()
         {
-            string xianshu = jieshou_dianshu.EditValue.ToString();
-            MessageBox.Show(xianshu);
+            string dianshu = jieshou_dianshu.EditValue.ToString();
+            Int32 i_dianshu =  Convert.ToInt32(dianshu);
+            string xianshu = jieshou_xianshu.EditValue.ToString();
+            Int32 i_xianshu = Convert.ToInt32(xianshu);
+            
+
+        }
+
+        #endregion
+
+
+        #region（11）纵向滚动道数 =激发点距/道距        private void Get纵向滚动道数()
+        {
+            
         }
         #endregion
+
+
 
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -40,7 +54,7 @@ namespace SGsortCalaParam
                 return;
             }
 
-            // this.Get总接收点数();
+            this.Get总接收点数();
         }
 
 
