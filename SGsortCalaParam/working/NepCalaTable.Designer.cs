@@ -152,6 +152,7 @@
             // bushe_xianshu
             // 
             this.bushe_xianshu.Caption = "布设激发线数";
+            this.bushe_xianshu.FieldName = "bushe_xianshu";
             this.bushe_xianshu.Name = "bushe_xianshu";
             this.bushe_xianshu.Visible = true;
             this.bushe_xianshu.VisibleIndex = 0;
@@ -160,6 +161,7 @@
             // bushe_daoshu
             // 
             this.bushe_daoshu.Caption = "布设接收线单线接收道数";
+            this.bushe_daoshu.FieldName = "bushe_daoshu";
             this.bushe_daoshu.Name = "bushe_daoshu";
             this.bushe_daoshu.OptionsColumn.AllowEdit = false;
             this.bushe_daoshu.Visible = true;
@@ -169,6 +171,7 @@
             // bushe_zongdaoshu
             // 
             this.bushe_zongdaoshu.Caption = "布设排列总道数";
+            this.bushe_zongdaoshu.FieldName = "bushe_zongdaoshu";
             this.bushe_zongdaoshu.Name = "bushe_zongdaoshu";
             this.bushe_zongdaoshu.OptionsColumn.AllowEdit = false;
             this.bushe_zongdaoshu.Visible = true;
@@ -178,6 +181,7 @@
             // banqian_daoshu
             // 
             this.banqian_daoshu.Caption = "搬迁道数";
+            this.banqian_daoshu.FieldName = "banqian_daoshu";
             this.banqian_daoshu.Name = "banqian_daoshu";
             this.banqian_daoshu.OptionsColumn.AllowEdit = false;
             this.banqian_daoshu.Visible = true;
@@ -187,6 +191,7 @@
             // ke_caiji
             // 
             this.ke_caiji.Caption = "可采集炮次";
+            this.ke_caiji.FieldName = "ke_caiji";
             this.ke_caiji.Name = "ke_caiji";
             this.ke_caiji.OptionsColumn.AllowEdit = false;
             this.ke_caiji.Visible = true;
@@ -196,6 +201,7 @@
             // banjia_daoshu
             // 
             this.banjia_daoshu.Caption = "搬家道数";
+            this.banjia_daoshu.FieldName = "banjia_daoshu";
             this.banjia_daoshu.Name = "banjia_daoshu";
             this.banjia_daoshu.OptionsColumn.AllowEdit = false;
             this.banjia_daoshu.Visible = true;
@@ -205,6 +211,7 @@
             // hengxiangchang
             // 
             this.hengxiangchang.Caption = "横向长度";
+            this.hengxiangchang.FieldName = "hengxiangchang";
             this.hengxiangchang.Name = "hengxiangchang";
             this.hengxiangchang.OptionsColumn.AllowEdit = false;
             this.hengxiangchang.Visible = true;
@@ -214,6 +221,7 @@
             // zongxiangchang
             // 
             this.zongxiangchang.Caption = "纵向长度";
+            this.zongxiangchang.FieldName = "zongxiangchang";
             this.zongxiangchang.Name = "zongxiangchang";
             this.zongxiangchang.OptionsColumn.AllowEdit = false;
             this.zongxiangchang.Visible = true;
@@ -223,6 +231,7 @@
             // zonghengbi
             // 
             this.zonghengbi.Caption = "纵横比";
+            this.zonghengbi.FieldName = "zonghengbi";
             this.zonghengbi.Name = "zonghengbi";
             this.zonghengbi.OptionsColumn.AllowEdit = false;
             this.zonghengbi.Visible = true;

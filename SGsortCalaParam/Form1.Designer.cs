@@ -62,6 +62,7 @@
             this.repositoryItemTextEdit10 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.bushe_jifaxianshu = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemTextEdit11 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
+            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup4 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -73,13 +74,12 @@
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.nepCalaTable1 = new SGsortCalaParam.working.NepCalaTable();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
-            this.barEditItem3 = new DevExpress.XtraBars.BarEditItem();
-            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.barButtonItem7 = new DevExpress.XtraBars.BarButtonItem();
+            this.barEditItem2 = new DevExpress.XtraBars.BarEditItem();
+            this.barEditItem3 = new DevExpress.XtraBars.BarEditItem();
+            this.barEditItem1 = new DevExpress.XtraBars.BarEditItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).BeginInit();
@@ -376,6 +376,16 @@
             resources.ApplyResources(this.repositoryItemTextEdit11, "repositoryItemTextEdit11");
             this.repositoryItemTextEdit11.Name = "repositoryItemTextEdit11";
             // 
+            // barButtonItem7
+            // 
+            resources.ApplyResources(this.barButtonItem7, "barButtonItem7");
+            this.barButtonItem7.Glyph = ((System.Drawing.Image)(resources.GetObject("barButtonItem7.Glyph")));
+            this.barButtonItem7.Id = 22;
+            this.barButtonItem7.Name = "barButtonItem7";
+            this.barButtonItem7.RibbonStyle = ((DevExpress.XtraBars.Ribbon.RibbonItemStyles)(((DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithText) 
+            | DevExpress.XtraBars.Ribbon.RibbonItemStyles.SmallWithoutText)));
+            this.barButtonItem7.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem7_ItemClick);
+            // 
             // ribbonPage2
             // 
             this.ribbonPage2.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -459,27 +469,6 @@
             this.xtraTabPage2.Name = "xtraTabPage2";
             resources.ApplyResources(this.xtraTabPage2, "xtraTabPage2");
             // 
-            // barEditItem2
-            // 
-            resources.ApplyResources(this.barEditItem2, "barEditItem2");
-            this.barEditItem2.Edit = this.repositoryItemTextEdit1;
-            this.barEditItem2.Id = 9;
-            this.barEditItem2.Name = "barEditItem2";
-            // 
-            // barEditItem3
-            // 
-            resources.ApplyResources(this.barEditItem3, "barEditItem3");
-            this.barEditItem3.Edit = this.repositoryItemTextEdit1;
-            this.barEditItem3.Id = 9;
-            this.barEditItem3.Name = "barEditItem3";
-            // 
-            // barEditItem1
-            // 
-            resources.ApplyResources(this.barEditItem1, "barEditItem1");
-            this.barEditItem1.Edit = this.repositoryItemTextEdit7;
-            this.barEditItem1.Id = 16;
-            this.barEditItem1.Name = "barEditItem1";
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -500,11 +489,26 @@
             resources.ApplyResources(this.Column2, "Column2");
             this.Column2.Name = "Column2";
             // 
-            // barButtonItem7
+            // barEditItem2
             // 
-            resources.ApplyResources(this.barButtonItem7, "barButtonItem7");
-            this.barButtonItem7.Id = 22;
-            this.barButtonItem7.Name = "barButtonItem7";
+            resources.ApplyResources(this.barEditItem2, "barEditItem2");
+            this.barEditItem2.Edit = this.repositoryItemTextEdit1;
+            this.barEditItem2.Id = 9;
+            this.barEditItem2.Name = "barEditItem2";
+            // 
+            // barEditItem3
+            // 
+            resources.ApplyResources(this.barEditItem3, "barEditItem3");
+            this.barEditItem3.Edit = this.repositoryItemTextEdit1;
+            this.barEditItem3.Id = 9;
+            this.barEditItem3.Name = "barEditItem3";
+            // 
+            // barEditItem1
+            // 
+            resources.ApplyResources(this.barEditItem1, "barEditItem1");
+            this.barEditItem1.Edit = this.repositoryItemTextEdit7;
+            this.barEditItem1.Id = 16;
+            this.barEditItem1.Name = "barEditItem1";
             // 
             // Form1
             // 
