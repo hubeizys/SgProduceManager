@@ -98,7 +98,7 @@ namespace SGsortCalaParam
             {
                 string GunDongDaoshu = this.active_nepCalaTable.GDDaoshu;
                 int i_GD_Daoshu = Convert.ToInt32(GunDongDaoshu);
-                r_bushe = (i_GD_Daoshu * p_bushe_jifashu) + Convert.ToInt32(jieshou_dianshu.EditValue);
+                r_bushe = (i_GD_Daoshu * (p_bushe_jifashu -1 )) + Convert.ToInt32(jieshou_dianshu.EditValue);
             }
             catch (Exception err)
             {
@@ -135,9 +135,9 @@ namespace SGsortCalaParam
             {
                 string GunDongDaoshu = this.active_nepCalaTable.GDDaoshu;
                 int i_GD_Daoshu = Convert.ToInt32(GunDongDaoshu);
-
-                string bushe_jieshouxianshu = jieshou_xianshu.EditValue.ToString();
-                int i_bushe_jieshouxianshu = Convert.ToInt32(bushe_jieshouxianshu);
+                
+                string t_bushe_jieshouxianshu = bushe_jieshouxianshu.EditValue.ToString();
+                int i_bushe_jieshouxianshu = Convert.ToInt32(t_bushe_jieshouxianshu);
                 r_banqian_daoshu = p_bushe_jifashu * i_GD_Daoshu * i_bushe_jieshouxianshu;
             }
             catch (Exception err)
@@ -260,11 +260,9 @@ namespace SGsortCalaParam
         private void GridInit()
         {
             DataTable dt = this.active_nepCalaTable.DDT;            
-            for (int i = 0; i <= 40; i++)
+            for (int i = 1; i <= 40; i++)
             {
-                // 如果是偶数的话
-                if (i % 2 == 0)
-                {
+
                     DataRow dr = dt.NewRow();
                     dt.Rows.Add(dr);
                     dr["bushe_xianshu"] = Convert.ToString(i);
@@ -276,7 +274,7 @@ namespace SGsortCalaParam
                     dr["hengxiangchang"] = Get横向长度(Convert.ToInt32(dr["bushe_daoshu"]));
                     dr["zongxiangchang"] = Get纵向长度();
                     dr["zonghengbi"] = Get纵横比(Convert.ToInt32(dr["hengxiangchang"]), Convert.ToInt32(dr["zongxiangchang"]));
-                }
+                
             }
             this.active_nepCalaTable.reflash();
         }
