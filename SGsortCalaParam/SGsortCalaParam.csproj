@@ -72,6 +72,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tubiao\congfu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tubiao\congfu.Designer.cs">
+      <DependentUpon>congfu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tubiao\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tubiao\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tubiao\tubiao1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tubiao\tubiao1.Designer.cs">
+      <DependentUpon>tubiao1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tubiao\tubiao2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tubiao\tubiao2.Designer.cs">
+      <DependentUpon>tubiao2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tubiao\tubiao3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tubiao\tubiao3.Designer.cs">
+      <DependentUpon>tubiao3.cs</DependentUpon>
+    </Compile>
     <Compile Include="working\NepCalaTable.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,6 +125,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="tubiao\congfu.resx">
+      <DependentUpon>congfu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tubiao\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tubiao\tubiao1.resx">
+      <DependentUpon>tubiao1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tubiao\tubiao2.resx">
+      <DependentUpon>tubiao2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tubiao\tubiao3.resx">
+      <DependentUpon>tubiao3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="working\NepCalaTable.resx">
       <DependentUpon>NepCalaTable.cs</DependentUpon>
     </EmbeddedResource>

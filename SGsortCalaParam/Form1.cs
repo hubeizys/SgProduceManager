@@ -110,7 +110,8 @@ namespace SGsortCalaParam
 
 
 
-        #region （16）布设排列总道数 =（15）布设接受线单线接收道数*（12）布设接收线数        private int Get布设排列总道数(Int32 p_bushe_danxiandaoshu)
+        #region （16）布设排列总道数 =（15）布设接受线单线接收道数*（12）布设接收线数
+        private int Get布设排列总道数(Int32 p_bushe_danxiandaoshu)
         {
             int r_bushe_pailie = 0;
             try
@@ -238,7 +239,8 @@ namespace SGsortCalaParam
 
         #endregion
 
-        #region （22）纵横比 =纵/横（保留小数点后 2 位）
+        #region （22）纵横比 =纵/横（保留小数点后 2 位）
+
         private double Get纵横比(int p_zong, int p_heng)
         {
             double r_zhonghengbi = 0;
@@ -265,7 +267,9 @@ namespace SGsortCalaParam
 
                     DataRow dr = dt.NewRow();
                     dt.Rows.Add(dr);
-                    dr["bushe_xianshu"] = Convert.ToString(i);
+                    
+                    dr["bushe_xianshu"] = Convert.ToInt32(i);
+                    
                     dr["bushe_daoshu"] = Get布设接受线单线接收道数(i).ToString();
                     dr["bushe_zongdaoshu"] = Get布设排列总道数(Convert.ToInt32(dr["bushe_daoshu"])).ToString();
                     dr["banqian_daoshu"] = Get搬迁道数(i).ToString();
@@ -427,7 +431,67 @@ namespace SGsortCalaParam
 
         private void barButtonItem7_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            /*
+            DataTable aa = this.active_nepCalaTable.DDT.Copy();
+            aa.Columns["bushe_xianshu"].DataType = typeof(Int32);
+            //MessageBox.Show(aa.Columns["bushe_xianshu"].DataType.ToString());
+            MessageBox.Show(this.active_nepCalaTable.DDT.Columns["bushe_xianshu"].DataType.ToString());
+            DataView nn = aa.DefaultView;
+            nn.Sort = "bushe_xianshu desc";
+            aa = nn.ToTable();
+            Console.WriteLine(this.active_nepCalaTable.DDT.Rows.Count);
+            Console.WriteLine(aa.Rows.Count);
+            foreach (DataRow dr in aa.Rows)
+            {
+                object value = dr["bushe_xianshu"];
+                Console.WriteLine(string.Format("value == {0}", value));
+            }
+            this.active_nepCalaTable.reflash();
+            */
+        }
 
+        private void barButtonItem7_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            tubiao.tubiao1 tt_1 = new tubiao.tubiao1();
+            tt_1.Dock = DockStyle.Fill;
+            tt_1.TopLevel = false;
+            this.workspace1.SelectedTabPage.Controls.Add(tt_1);
+            tt_1.BringToFront();
+            tt_1.Show();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            tubiao.tubiao2 tt_2 = new tubiao.tubiao2();
+            tt_2.Dock = DockStyle.Fill;
+            tt_2.TopLevel = false;
+            this.workspace1.SelectedTabPage.Controls.Add(tt_2);
+            tt_2.BringToFront();
+            tt_2.Show();
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            tubiao.tubiao3 tt_1 = new tubiao.tubiao3();
+            tt_1.Dock = DockStyle.Fill;
+            tt_1.TopLevel = false;
+            this.workspace1.SelectedTabPage.Controls.Add(tt_1);
+            tt_1.BringToFront();
+            tt_1.Show();
+        }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            try { this.workspace1.SelectedTabPage.Text = this.textEdit1.Text.ToString(); }
+            catch (Exception err)
+            {
+                MessageBox.Show("空提交: " + err.Message);
+            }
         }
     }
 }

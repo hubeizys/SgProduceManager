@@ -13,16 +13,19 @@ namespace SGsortCalaParam.working
 {
     public partial class NepCalaTable : UserControl
     {
-        private DataTable dt = new DataTable();
-
-
+        // 每次用微软的技术 我都有种 我是弱智的感觉 
+        // 总是有各种匪夷所思的现象发生， 时时刻刻的侮辱我的智商。 
+        // DataTable  在外面new  居然 给我凭空的多出了 我预想要add的 列名 。 还强制个给我设定string 类型 
+        // 我感觉我的智商受到了侮辱。 
+        private DataTable dt;
         public DataTable DDT {
             set { this.dt = value; }
-            get { return this.dt; }
+            get { return  this.dt; }
         }
 
         public void reflash()
         {
+   
             if (this.gridControl1 != null)
             {
                 gridControl1.RefreshDataSource();
@@ -30,30 +33,12 @@ namespace SGsortCalaParam.working
         }
 
 
-        /*
-         *                     dr["bushe_xianshu"] = Convert.ToString(i);
-                    dr["bushe_daoshu"] = Convert.ToString(i);
-                    dr["bushe_zongdaoshu"] = Convert.ToString(i);
-                    dr["banqian_daoshu"] = Convert.ToString(i);
-                    dr["ke_caiji"] = Convert.ToString(i);
-                    dr["banjia_daoshu"] = Convert.ToString(i);
-                    dr["hengxiangchang"] = Convert.ToString(i);
-                    dr["zongxiangchang"] = Convert.ToString(i);
-                    dr["zonghengbi"] = Convert.ToString(i);
-         */
 
         public NepCalaTable()
         {
-            dt.Columns.Add("bushe_xianshu", Type.GetType("System.String"));
-            dt.Columns.Add("bushe_daoshu", Type.GetType("System.String"));
-            dt.Columns.Add("bushe_zongdaoshu", Type.GetType("System.String"));
-            dt.Columns.Add("banqian_daoshu", Type.GetType("System.String"));
-            dt.Columns.Add("ke_caiji", Type.GetType("System.String"));
-            dt.Columns.Add("banjia_daoshu", Type.GetType("System.String"));
-            dt.Columns.Add("hengxiangchang", Type.GetType("System.String"));
-            dt.Columns.Add("zongxiangchang", Type.GetType("System.String"));
-            dt.Columns.Add("zonghengbi", Type.GetType("System.String"));    
+   
             InitializeComponent();
+
         }
         public string 
         JSDianshu {
@@ -94,37 +79,9 @@ namespace SGsortCalaParam.working
         #endregion
 
 
-        #region 初始设置一下
-        private void GridInit()
-        {
-            DataRow dr = dt.NewRow();
-            dr["bushe_xianshu"] = "asdasdasdasdasdsad";
-            dr["bushe_zongdaoshu"] = "sdsd";
-            dt.Rows.Add(dr);
-
-            for (int i=0 ; i <= 40 ; i++)
-            {
-                // 如果是偶数的话
-                if (i % 2 == 0)
-                {
-                    dr["bushe_xianshu"] = Convert.ToString(i);
-                    dr["bushe_daoshu"] = Convert.ToString(i);
-                    dr["bushe_zongdaoshu"] = Convert.ToString(i);
-                    dr["banqian_daoshu"] = Convert.ToString(i);
-                    dr["ke_caiji"] = Convert.ToString(i);
-                    dr["banjia_daoshu"] = Convert.ToString(i);
-                    dr["hengxiangchang"] = Convert.ToString(i);
-                    dr["zongxiangchang"] = Convert.ToString(i);
-                    dr["zonghengbi"] = Convert.ToString(i);
-                }
-            }
-            this.gridControl1.DataSource = dt;
-        }
-        #endregion
-
         private void gridControl1_Load(object sender, EventArgs e)
         {
-            // this.GridInit();      
+
             this.gridControl1.DataSource = this.dt;          
         }
 
@@ -273,6 +230,50 @@ namespace SGsortCalaParam.working
             catch (Exception err)
             {
                 MessageBox.Show(string.Format(" 生成节点出现了错误 {0}", err.Message));
+            }
+        }
+
+        private void NepCalaTable_Load(object sender, EventArgs e)
+        {
+            dt  = new DataTable();
+
+            dt.Columns.Add("bushe_xianshu", typeof(int));
+            //MessageBox.Show(dt.Columns["bushe_xianshu"].DataType.ToString());
+            dt.Columns.Add("bushe_daoshu", typeof(int));
+            dt.Columns.Add("bushe_zongdaoshu", typeof(int));
+            dt.Columns.Add("banqian_daoshu", typeof(int));
+            dt.Columns.Add("ke_caiji", typeof(int));
+            dt.Columns.Add("banjia_daoshu", typeof(int));
+            dt.Columns.Add("hengxiangchang", typeof(int));
+            dt.Columns.Add("zongxiangchang", typeof(int));
+            dt.Columns.Add("zonghengbi", typeof(double));
+
+            foreach (DataColumn dc in dt.Columns)
+            {
+                Console.Write(string.Format("列名：{0} ,数据类型：{1}\n", dc.ColumnName, dc.DataType));
+            }
+        }
+
+        private void barButtonItem1_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void gridControl1_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                popupMenu1.ShowPopup(Control.MousePosition);
+            }
+        }
+
+        private void gridView1_RowClick(object sender, DevExpress.XtraGrid.Views.Grid.RowClickEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                int i = this.gridView1.FocusedRowHandle;
+                //MessageBox.Show(string.Format("将要操作 第{0}行", i));
+                Console.WriteLine(string.Format("将要操作 第{0}行", i));
             }
         }
     }
