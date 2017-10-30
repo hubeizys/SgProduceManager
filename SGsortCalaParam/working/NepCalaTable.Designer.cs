@@ -569,24 +569,24 @@
             this.labelControl15.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl15.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl15.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl15.Location = new System.Drawing.Point(26, 14);
+            this.labelControl15.Location = new System.Drawing.Point(0, 14);
             this.labelControl15.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(80, 18);
+            this.labelControl15.Size = new System.Drawing.Size(106, 18);
             this.labelControl15.TabIndex = 38;
-            this.labelControl15.Text = "总接收点数";
+            this.labelControl15.Text = "布设接收线数";
             // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelControl6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl6.Location = new System.Drawing.Point(8, 37);
+            this.labelControl6.Location = new System.Drawing.Point(0, 37);
             this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(100, 20);
+            this.labelControl6.Size = new System.Drawing.Size(108, 20);
             this.labelControl6.TabIndex = 34;
-            this.labelControl6.Text = "纵向滚动道数";
+            this.labelControl6.Text = "布设激发线数";
             // 
             // textEdit_jsdaoshu
             // 
