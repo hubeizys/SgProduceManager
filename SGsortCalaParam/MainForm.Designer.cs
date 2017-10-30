@@ -77,7 +77,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1184, 861);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1234, 861);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // xtraTabControl1
@@ -90,7 +90,7 @@
             this.xtraTabControl1.MultiLine = DevExpress.Utils.DefaultBoolean.False;
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1178, 692);
+            this.xtraTabControl1.Size = new System.Drawing.Size(1228, 692);
             this.xtraTabControl1.TabIndex = 0;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -100,7 +100,7 @@
             // 
             this.xtraTabPage1.Controls.Add(this.nepCalaTable1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1091, 686);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1141, 686);
             this.xtraTabPage1.Text = "新工作区";
             // 
             // nepCalaTable1
@@ -112,13 +112,13 @@
             this.nepCalaTable1.JSDianshu = "";
             this.nepCalaTable1.Location = new System.Drawing.Point(0, 0);
             this.nepCalaTable1.Name = "nepCalaTable1";
-            this.nepCalaTable1.Size = new System.Drawing.Size(1091, 686);
+            this.nepCalaTable1.Size = new System.Drawing.Size(1141, 686);
             this.nepCalaTable1.TabIndex = 0;
             // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1091, 601);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1191, 686);
             this.xtraTabPage2.Text = "工作区2";
             // 
             // panel1
@@ -146,7 +146,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1178, 117);
+            this.panel1.Size = new System.Drawing.Size(1228, 117);
             this.panel1.TabIndex = 1;
             // 
             // labelControl11
@@ -342,7 +342,7 @@
             this.lb_workspace_name.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lb_workspace_name.Location = new System.Drawing.Point(3, 3);
             this.lb_workspace_name.Name = "lb_workspace_name";
-            this.lb_workspace_name.Size = new System.Drawing.Size(1178, 34);
+            this.lb_workspace_name.Size = new System.Drawing.Size(1228, 34);
             this.lb_workspace_name.TabIndex = 2;
             this.lb_workspace_name.Text = "新工作区";
             // 
@@ -350,7 +350,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 861);
+            this.ClientSize = new System.Drawing.Size(1234, 861);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NepCalaTable));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -42,10 +43,11 @@
             this.zongxiangchang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.zonghengbi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit_paoci = new DevExpress.XtraEditors.TextEdit();
             this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit_jsdaoshu = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
@@ -65,7 +67,6 @@
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit_zongdaoshu = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit_paoci = new DevExpress.XtraEditors.TextEdit();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -79,11 +80,14 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit_jsdaoshu = new DevExpress.XtraEditors.TextEdit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoci.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
@@ -95,10 +99,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdaoshu.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoci.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdianshu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit_jsdaoshu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -261,21 +265,25 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 10;
+            this.tableLayoutPanel2.ColumnCount = 11;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 113F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 114F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 74F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
-            this.tableLayoutPanel2.Controls.Add(this.textEdit12, 7, 0);
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 73F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
+            this.tableLayoutPanel2.Controls.Add(this.textEdit_jsdaoshu, 9, 2);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl15, 6, 1);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl14, 10, 2);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit10, 7, 2);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl6, 6, 2);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit_paoci, 7, 0);
             this.tableLayoutPanel2.Controls.Add(this.textEdit11, 7, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textEdit_jsdaoshu, 6, 1);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl15, 6, 0);
             this.tableLayoutPanel2.Controls.Add(this.textEdit9, 5, 0);
             this.tableLayoutPanel2.Controls.Add(this.textEdit8, 5, 2);
             this.tableLayoutPanel2.Controls.Add(this.textEdit7, 5, 1);
@@ -295,12 +303,11 @@
             this.tableLayoutPanel2.Controls.Add(this.labelControl5, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.labelControl4, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.textEdit_zongdaoshu, 9, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textEdit_paoci, 9, 2);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl3, 8, 2);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl3, 6, 0);
             this.tableLayoutPanel2.Controls.Add(this.labelControl2, 8, 1);
             this.tableLayoutPanel2.Controls.Add(this.labelControl1, 8, 0);
             this.tableLayoutPanel2.Controls.Add(this.textEdit_zongdianshu, 9, 0);
-            this.tableLayoutPanel2.Controls.Add(this.simpleButton1, 6, 2);
+            this.tableLayoutPanel2.Controls.Add(this.simpleButton1, 10, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -311,75 +318,83 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(1010, 74);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // textEdit12
+            // labelControl14
             // 
-            this.textEdit12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit12.Location = new System.Drawing.Point(605, 3);
-            this.textEdit12.Name = "textEdit12";
-            this.textEdit12.Properties.AutoHeight = false;
-            this.textEdit12.Size = new System.Drawing.Size(58, 18);
-            this.textEdit12.TabIndex = 33;
+            this.labelControl14.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl14.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl14.Location = new System.Drawing.Point(920, 51);
+            this.labelControl14.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl14.Name = "labelControl14";
+            this.labelControl14.Size = new System.Drawing.Size(94, 20);
+            this.labelControl14.TabIndex = 37;
+            this.labelControl14.Text = "运算";
+            // 
+            // textEdit10
+            // 
+            this.textEdit10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit10.Location = new System.Drawing.Point(681, 51);
+            this.textEdit10.Name = "textEdit10";
+            this.textEdit10.Properties.AutoHeight = false;
+            this.textEdit10.Size = new System.Drawing.Size(48, 20);
+            this.textEdit10.TabIndex = 35;
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl6.Location = new System.Drawing.Point(503, 51);
+            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(163, 20);
+            this.labelControl6.TabIndex = 34;
+            this.labelControl6.Text = "纵向滚动道数";
+            // 
+            // textEdit_paoci
+            // 
+            this.textEdit_paoci.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit_paoci.Location = new System.Drawing.Point(681, 3);
+            this.textEdit_paoci.Name = "textEdit_paoci";
+            this.textEdit_paoci.Properties.AutoHeight = false;
+            this.textEdit_paoci.Size = new System.Drawing.Size(48, 18);
+            this.textEdit_paoci.TabIndex = 33;
             // 
             // textEdit11
             // 
             this.textEdit11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit11.Location = new System.Drawing.Point(605, 27);
+            this.textEdit11.Location = new System.Drawing.Point(681, 27);
             this.textEdit11.Name = "textEdit11";
             this.textEdit11.Properties.AutoHeight = false;
-            this.textEdit11.Size = new System.Drawing.Size(58, 18);
+            this.textEdit11.Size = new System.Drawing.Size(48, 18);
             this.textEdit11.TabIndex = 32;
-            // 
-            // textEdit_jsdaoshu
-            // 
-            this.textEdit_jsdaoshu.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textEdit_jsdaoshu.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.textEdit_jsdaoshu.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.textEdit_jsdaoshu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit_jsdaoshu.Location = new System.Drawing.Point(487, 27);
-            this.textEdit_jsdaoshu.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
-            this.textEdit_jsdaoshu.Name = "textEdit_jsdaoshu";
-            this.textEdit_jsdaoshu.Size = new System.Drawing.Size(103, 18);
-            this.textEdit_jsdaoshu.TabIndex = 30;
-            this.textEdit_jsdaoshu.Text = "纵向滚动道数";
-            // 
-            // labelControl15
-            // 
-            this.labelControl15.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl15.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl15.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl15.Location = new System.Drawing.Point(487, 3);
-            this.labelControl15.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(103, 18);
-            this.labelControl15.TabIndex = 29;
-            this.labelControl15.Text = "布设接收线数";
             // 
             // textEdit9
             // 
             this.textEdit9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit9.Location = new System.Drawing.Point(422, 3);
+            this.textEdit9.Location = new System.Drawing.Point(429, 3);
             this.textEdit9.Name = "textEdit9";
             this.textEdit9.Properties.AutoHeight = false;
-            this.textEdit9.Size = new System.Drawing.Size(59, 18);
+            this.textEdit9.Size = new System.Drawing.Size(68, 18);
             this.textEdit9.TabIndex = 27;
             // 
             // textEdit8
             // 
             this.textEdit8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit8.Location = new System.Drawing.Point(422, 51);
+            this.textEdit8.Location = new System.Drawing.Point(429, 51);
             this.textEdit8.Name = "textEdit8";
             this.textEdit8.Properties.AutoHeight = false;
-            this.textEdit8.Size = new System.Drawing.Size(59, 20);
+            this.textEdit8.Size = new System.Drawing.Size(68, 20);
             this.textEdit8.TabIndex = 26;
             // 
             // textEdit7
             // 
             this.textEdit7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit7.Location = new System.Drawing.Point(422, 27);
+            this.textEdit7.Location = new System.Drawing.Point(429, 27);
             this.textEdit7.Name = "textEdit7";
             this.textEdit7.Properties.AutoHeight = false;
-            this.textEdit7.Size = new System.Drawing.Size(59, 18);
+            this.textEdit7.Size = new System.Drawing.Size(68, 18);
             this.textEdit7.TabIndex = 25;
             // 
             // labelControl13
@@ -388,10 +403,10 @@
             this.labelControl13.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl13.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl13.Location = new System.Drawing.Point(311, 51);
+            this.labelControl13.Location = new System.Drawing.Point(315, 51);
             this.labelControl13.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(96, 20);
+            this.labelControl13.Size = new System.Drawing.Size(99, 20);
             this.labelControl13.TabIndex = 24;
             this.labelControl13.Text = "模板横向滚动";
             // 
@@ -401,12 +416,12 @@
             this.labelControl12.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl12.Location = new System.Drawing.Point(311, 27);
+            this.labelControl12.Location = new System.Drawing.Point(315, 27);
             this.labelControl12.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(96, 18);
+            this.labelControl12.Size = new System.Drawing.Size(99, 18);
             this.labelControl12.TabIndex = 23;
-            this.labelControl12.Text = "模板纵向滚动";
+            this.labelControl12.Text = "接收线数";
             // 
             // labelControl11
             // 
@@ -414,38 +429,38 @@
             this.labelControl11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl11.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl11.Location = new System.Drawing.Point(311, 3);
+            this.labelControl11.Location = new System.Drawing.Point(315, 3);
             this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(96, 18);
+            this.labelControl11.Size = new System.Drawing.Size(99, 18);
             this.labelControl11.TabIndex = 22;
             this.labelControl11.Text = "模板炮";
             // 
             // textEdit6
             // 
             this.textEdit6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit6.Location = new System.Drawing.Point(239, 51);
+            this.textEdit6.Location = new System.Drawing.Point(256, 51);
             this.textEdit6.Name = "textEdit6";
             this.textEdit6.Properties.AutoHeight = false;
-            this.textEdit6.Size = new System.Drawing.Size(66, 20);
+            this.textEdit6.Size = new System.Drawing.Size(53, 20);
             this.textEdit6.TabIndex = 21;
             // 
             // textEdit5
             // 
             this.textEdit5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit5.Location = new System.Drawing.Point(239, 27);
+            this.textEdit5.Location = new System.Drawing.Point(256, 27);
             this.textEdit5.Name = "textEdit5";
             this.textEdit5.Properties.AutoHeight = false;
-            this.textEdit5.Size = new System.Drawing.Size(66, 18);
+            this.textEdit5.Size = new System.Drawing.Size(53, 18);
             this.textEdit5.TabIndex = 20;
             // 
             // textEdit4
             // 
             this.textEdit4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit4.Location = new System.Drawing.Point(239, 3);
+            this.textEdit4.Location = new System.Drawing.Point(256, 3);
             this.textEdit4.Name = "textEdit4";
             this.textEdit4.Properties.AutoHeight = false;
-            this.textEdit4.Size = new System.Drawing.Size(66, 18);
+            this.textEdit4.Size = new System.Drawing.Size(53, 18);
             this.textEdit4.TabIndex = 19;
             // 
             // labelControl10
@@ -454,12 +469,12 @@
             this.labelControl10.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl10.Location = new System.Drawing.Point(152, 51);
+            this.labelControl10.Location = new System.Drawing.Point(143, 51);
             this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(72, 20);
+            this.labelControl10.Size = new System.Drawing.Size(98, 20);
             this.labelControl10.TabIndex = 18;
-            this.labelControl10.Text = "接收点数";
+            this.labelControl10.Text = "模板纵向滚动";
             // 
             // labelControl9
             // 
@@ -467,12 +482,12 @@
             this.labelControl9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl9.Location = new System.Drawing.Point(152, 27);
+            this.labelControl9.Location = new System.Drawing.Point(143, 27);
             this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(72, 18);
+            this.labelControl9.Size = new System.Drawing.Size(98, 18);
             this.labelControl9.TabIndex = 17;
-            this.labelControl9.Text = "接收线数";
+            this.labelControl9.Text = "接收线距";
             // 
             // labelControl8
             // 
@@ -480,12 +495,12 @@
             this.labelControl8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl8.Location = new System.Drawing.Point(152, 3);
+            this.labelControl8.Location = new System.Drawing.Point(143, 3);
             this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(72, 18);
+            this.labelControl8.Size = new System.Drawing.Size(98, 18);
             this.labelControl8.TabIndex = 16;
-            this.labelControl8.Text = "接收线距";
+            this.labelControl8.Text = "激发线距";
             // 
             // textEdit3
             // 
@@ -493,7 +508,7 @@
             this.textEdit3.Location = new System.Drawing.Point(87, 51);
             this.textEdit3.Name = "textEdit3";
             this.textEdit3.Properties.AutoHeight = false;
-            this.textEdit3.Size = new System.Drawing.Size(59, 20);
+            this.textEdit3.Size = new System.Drawing.Size(50, 20);
             this.textEdit3.TabIndex = 15;
             // 
             // textEdit2
@@ -502,7 +517,7 @@
             this.textEdit2.Location = new System.Drawing.Point(87, 27);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.AutoHeight = false;
-            this.textEdit2.Size = new System.Drawing.Size(59, 18);
+            this.textEdit2.Size = new System.Drawing.Size(50, 18);
             this.textEdit2.TabIndex = 14;
             // 
             // textEdit1
@@ -511,7 +526,7 @@
             this.textEdit1.Location = new System.Drawing.Point(87, 3);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.AutoHeight = false;
-            this.textEdit1.Size = new System.Drawing.Size(59, 18);
+            this.textEdit1.Size = new System.Drawing.Size(50, 18);
             this.textEdit1.TabIndex = 13;
             // 
             // labelControl7
@@ -525,7 +540,7 @@
             this.labelControl7.Name = "labelControl7";
             this.labelControl7.Size = new System.Drawing.Size(69, 20);
             this.labelControl7.TabIndex = 12;
-            this.labelControl7.Text = "接收点距";
+            this.labelControl7.Text = "接收点数";
             // 
             // labelControl5
             // 
@@ -538,7 +553,7 @@
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(69, 18);
             this.labelControl5.TabIndex = 11;
-            this.labelControl5.Text = "激发线距";
+            this.labelControl5.Text = "接收点距";
             // 
             // labelControl4
             // 
@@ -559,17 +574,8 @@
             this.textEdit_zongdaoshu.Location = new System.Drawing.Point(847, 27);
             this.textEdit_zongdaoshu.Name = "textEdit_zongdaoshu";
             this.textEdit_zongdaoshu.Properties.AutoHeight = false;
-            this.textEdit_zongdaoshu.Size = new System.Drawing.Size(160, 18);
+            this.textEdit_zongdaoshu.Size = new System.Drawing.Size(67, 18);
             this.textEdit_zongdaoshu.TabIndex = 8;
-            // 
-            // textEdit_paoci
-            // 
-            this.textEdit_paoci.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit_paoci.Location = new System.Drawing.Point(847, 51);
-            this.textEdit_paoci.Name = "textEdit_paoci";
-            this.textEdit_paoci.Properties.AutoHeight = false;
-            this.textEdit_paoci.Size = new System.Drawing.Size(160, 20);
-            this.textEdit_paoci.TabIndex = 7;
             // 
             // labelControl3
             // 
@@ -577,10 +583,10 @@
             this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl3.Location = new System.Drawing.Point(669, 51);
+            this.labelControl3.Location = new System.Drawing.Point(503, 3);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(163, 20);
+            this.labelControl3.Size = new System.Drawing.Size(163, 18);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "布设排列片可采集炮次";
             // 
@@ -590,12 +596,12 @@
             this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl2.Location = new System.Drawing.Point(669, 27);
+            this.labelControl2.Location = new System.Drawing.Point(735, 27);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(163, 18);
+            this.labelControl2.Size = new System.Drawing.Size(97, 18);
             this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "纵向滚动道数";
+            this.labelControl2.Text = "布设激发线数";
             // 
             // labelControl1
             // 
@@ -603,12 +609,12 @@
             this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl1.Location = new System.Drawing.Point(669, 3);
+            this.labelControl1.Location = new System.Drawing.Point(735, 3);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(163, 18);
+            this.labelControl1.Size = new System.Drawing.Size(97, 18);
             this.labelControl1.TabIndex = 0;
-            this.labelControl1.Text = "总接收点数";
+            this.labelControl1.Text = "布设接收线数";
             // 
             // textEdit_zongdianshu
             // 
@@ -616,17 +622,18 @@
             this.textEdit_zongdianshu.Location = new System.Drawing.Point(847, 3);
             this.textEdit_zongdianshu.Name = "textEdit_zongdianshu";
             this.textEdit_zongdianshu.Properties.AutoHeight = false;
-            this.textEdit_zongdianshu.Size = new System.Drawing.Size(160, 18);
+            this.textEdit_zongdianshu.Size = new System.Drawing.Size(67, 18);
             this.textEdit_zongdianshu.TabIndex = 6;
             // 
             // simpleButton1
             // 
-            this.tableLayoutPanel2.SetColumnSpan(this.simpleButton1, 2);
-            this.simpleButton1.Location = new System.Drawing.Point(487, 51);
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(920, 3);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(176, 20);
-            this.simpleButton1.TabIndex = 34;
-            this.simpleButton1.Text = "计算";
+            this.tableLayoutPanel2.SetRowSpan(this.simpleButton1, 2);
+            this.simpleButton1.Size = new System.Drawing.Size(44, 42);
+            this.simpleButton1.TabIndex = 36;
             // 
             // barManager1
             // 
@@ -689,6 +696,29 @@
             this.popupMenu1.Manager = this.barManager1;
             this.popupMenu1.Name = "popupMenu1";
             // 
+            // labelControl15
+            // 
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl15.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl15.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl15.Location = new System.Drawing.Point(503, 27);
+            this.labelControl15.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(163, 18);
+            this.labelControl15.TabIndex = 38;
+            this.labelControl15.Text = "总接收点数";
+            // 
+            // textEdit_jsdaoshu
+            // 
+            this.textEdit_jsdaoshu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit_jsdaoshu.Location = new System.Drawing.Point(847, 51);
+            this.textEdit_jsdaoshu.Name = "textEdit_jsdaoshu";
+            this.textEdit_jsdaoshu.Properties.AutoHeight = false;
+            this.textEdit_jsdaoshu.Size = new System.Drawing.Size(67, 20);
+            this.textEdit_jsdaoshu.TabIndex = 39;
+            this.textEdit_jsdaoshu.Visible = false;
+            // 
             // NepCalaTable
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -705,7 +735,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoci.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
@@ -717,10 +748,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdaoshu.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoci.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdianshu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit_jsdaoshu.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -744,7 +775,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn zonghengbi;
         private DevExpress.XtraEditors.TextEdit textEdit_zongdianshu;
         private DevExpress.XtraEditors.TextEdit textEdit_zongdaoshu;
-        private DevExpress.XtraEditors.TextEdit textEdit_paoci;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
@@ -772,10 +802,13 @@
         private DevExpress.XtraEditors.TextEdit textEdit7;
         private DevExpress.XtraEditors.TextEdit textEdit8;
         private DevExpress.XtraEditors.TextEdit textEdit9;
-        private DevExpress.XtraEditors.LabelControl textEdit_jsdaoshu;
-        private DevExpress.XtraEditors.LabelControl labelControl15;
         private DevExpress.XtraEditors.TextEdit textEdit11;
-        private DevExpress.XtraEditors.TextEdit textEdit12;
+        private DevExpress.XtraEditors.TextEdit textEdit_paoci;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.TextEdit textEdit10;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.LabelControl labelControl14;
+        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.TextEdit textEdit_jsdaoshu;
     }
 }
