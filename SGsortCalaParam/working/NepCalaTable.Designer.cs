@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraCharts.XYDiagram xyDiagram4 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SplineSeriesView splineSeriesView5 = new DevExpress.XtraCharts.SplineSeriesView();
-            DevExpress.XtraCharts.XYDiagram xyDiagram5 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SplineSeriesView splineSeriesView6 = new DevExpress.XtraCharts.SplineSeriesView();
-            DevExpress.XtraCharts.XYDiagram xyDiagram6 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series7 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SplineSeriesView splineSeriesView7 = new DevExpress.XtraCharts.SplineSeriesView();
-            DevExpress.XtraCharts.Series series8 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SplineSeriesView splineSeriesView8 = new DevExpress.XtraCharts.SplineSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SplineSeriesView splineSeriesView1 = new DevExpress.XtraCharts.SplineSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SplineSeriesView splineSeriesView2 = new DevExpress.XtraCharts.SplineSeriesView();
+            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SplineSeriesView splineSeriesView3 = new DevExpress.XtraCharts.SplineSeriesView();
+            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SplineSeriesView splineSeriesView4 = new DevExpress.XtraCharts.SplineSeriesView();
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
@@ -89,7 +89,6 @@
             this.hengxiangchang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.zongxiangchang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.zonghengbi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.controlNavigator1 = new DevExpress.XtraEditors.ControlNavigator();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.textEdit_jsdaoshu = new DevExpress.XtraEditors.TextEdit();
             this.textEdit_zongdaoshu = new DevExpress.XtraEditors.TextEdit();
@@ -116,24 +115,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoxianju1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_jieshoudianshu1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView1)).BeginInit();
             this.navigationPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_mubanpaoshu2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjjieshouxianshu2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjpaoxianshu2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView2)).BeginInit();
             this.navigationPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView4)).BeginInit();
             this.navigationPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
@@ -298,16 +297,16 @@
             // 
             // chartControl1
             // 
-            xyDiagram4.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram4.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram4;
+            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram1;
             this.chartControl1.Location = new System.Drawing.Point(0, 79);
             this.chartControl1.Name = "chartControl1";
-            series5.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series5.Name = "设备数";
-            series5.View = splineSeriesView5;
+            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
+            series1.Name = "设备数";
+            series1.View = splineSeriesView1;
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series5};
+        series1};
             this.chartControl1.Size = new System.Drawing.Size(767, 451);
             this.chartControl1.TabIndex = 0;
             // 
@@ -384,15 +383,15 @@
             // 
             // chartControl2
             // 
-            xyDiagram5.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram5.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl2.Diagram = xyDiagram5;
+            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl2.Diagram = xyDiagram2;
             this.chartControl2.Location = new System.Drawing.Point(3, 57);
             this.chartControl2.Name = "chartControl2";
-            series6.Name = "激发炮数";
-            series6.View = splineSeriesView6;
+            series2.Name = "激发炮数";
+            series2.View = splineSeriesView2;
             this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series6};
+        series2};
             this.chartControl2.Size = new System.Drawing.Size(767, 480);
             this.chartControl2.TabIndex = 0;
             // 
@@ -405,18 +404,18 @@
             // 
             // chartControl3
             // 
-            xyDiagram6.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram6.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl3.Diagram = xyDiagram6;
+            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl3.Diagram = xyDiagram3;
             this.chartControl3.Location = new System.Drawing.Point(3, 70);
             this.chartControl3.Name = "chartControl3";
-            series7.Name = "8064模板";
-            series7.View = splineSeriesView7;
-            series8.Name = "9680模板";
-            series8.View = splineSeriesView8;
+            series3.Name = "8064模板";
+            series3.View = splineSeriesView3;
+            series4.Name = "9680模板";
+            series4.View = splineSeriesView4;
             this.chartControl3.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series7,
-        series8};
+        series3,
+        series4};
             this.chartControl3.Size = new System.Drawing.Size(764, 467);
             this.chartControl3.TabIndex = 0;
             // 
@@ -527,7 +526,6 @@
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.gridControl1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.controlNavigator1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(112, 0);
@@ -545,7 +543,8 @@
             this.gridControl1.Location = new System.Drawing.Point(3, 83);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(782, 474);
+            this.tableLayoutPanel1.SetRowSpan(this.gridControl1, 2);
+            this.gridControl1.Size = new System.Drawing.Size(782, 514);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -679,18 +678,6 @@
             this.zonghengbi.Visible = true;
             this.zonghengbi.VisibleIndex = 8;
             this.zonghengbi.Width = 82;
-            // 
-            // controlNavigator1
-            // 
-            this.controlNavigator1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.HotFlat;
-            this.controlNavigator1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.controlNavigator1.Location = new System.Drawing.Point(3, 563);
-            this.controlNavigator1.Name = "controlNavigator1";
-            this.controlNavigator1.NavigatableControl = this.gridControl1;
-            this.controlNavigator1.Size = new System.Drawing.Size(782, 34);
-            this.controlNavigator1.TabIndex = 1;
-            this.controlNavigator1.Text = "controlNavigator1";
-            this.controlNavigator1.TextLocation = DevExpress.XtraEditors.NavigatorButtonsTextLocation.Center;
             // 
             // tableLayoutPanel2
             // 
@@ -888,25 +875,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_daoju1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoxianju1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_jieshoudianshu1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.navigationPage2.ResumeLayout(false);
             this.navigationPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_mubanpaoshu2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjjieshouxianshu2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjpaoxianshu2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
             this.navigationPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(splineSeriesView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl3)).EndInit();
             this.navigationPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
@@ -936,7 +923,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraEditors.ControlNavigator controlNavigator1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
