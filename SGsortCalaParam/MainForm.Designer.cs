@@ -32,14 +32,17 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.nepCalaTable1 = new SGsortCalaParam.working.NepCalaTable();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.bt_cala = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -56,6 +59,7 @@
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
+            this.xtraTabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,7 +77,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1026, 687);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1184, 861);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // xtraTabControl1
@@ -82,11 +86,11 @@
             this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.xtraTabControl1.HeaderLocation = DevExpress.XtraTab.TabHeaderLocation.Left;
             this.xtraTabControl1.HeaderOrientation = DevExpress.XtraTab.TabOrientation.Horizontal;
-            this.xtraTabControl1.Location = new System.Drawing.Point(3, 140);
+            this.xtraTabControl1.Location = new System.Drawing.Point(3, 166);
             this.xtraTabControl1.MultiLine = DevExpress.Utils.DefaultBoolean.False;
             this.xtraTabControl1.Name = "xtraTabControl1";
             this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1020, 544);
+            this.xtraTabControl1.Size = new System.Drawing.Size(1178, 692);
             this.xtraTabControl1.TabIndex = 0;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1,
@@ -94,24 +98,39 @@
             // 
             // xtraTabPage1
             // 
+            this.xtraTabPage1.Controls.Add(this.nepCalaTable1);
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(933, 538);
+            this.xtraTabPage1.Size = new System.Drawing.Size(1091, 686);
             this.xtraTabPage1.Text = "新工作区";
+            // 
+            // nepCalaTable1
+            // 
+            this.nepCalaTable1.CJPaoco = "";
+            this.nepCalaTable1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nepCalaTable1.GDDaoshu = "";
+            this.nepCalaTable1.JSDaoshu = "";
+            this.nepCalaTable1.JSDianshu = "";
+            this.nepCalaTable1.Location = new System.Drawing.Point(0, 0);
+            this.nepCalaTable1.Name = "nepCalaTable1";
+            this.nepCalaTable1.Size = new System.Drawing.Size(1091, 686);
+            this.nepCalaTable1.TabIndex = 0;
             // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(933, 538);
+            this.xtraTabPage2.Size = new System.Drawing.Size(1091, 601);
             this.xtraTabPage2.Text = "工作区2";
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.labelControl11);
+            this.panel1.Controls.Add(this.simpleButton2);
+            this.panel1.Controls.Add(this.labelControl10);
+            this.panel1.Controls.Add(this.simpleButton1);
             this.panel1.Controls.Add(this.labelControl9);
             this.panel1.Controls.Add(this.bt_cala);
             this.panel1.Controls.Add(this.labelControl8);
             this.panel1.Controls.Add(this.simpleButton8);
-            this.panel1.Controls.Add(this.labelControl7);
-            this.panel1.Controls.Add(this.simpleButton7);
             this.panel1.Controls.Add(this.labelControl6);
             this.panel1.Controls.Add(this.simpleButton6);
             this.panel1.Controls.Add(this.labelControl5);
@@ -127,88 +146,110 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 43);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1020, 91);
+            this.panel1.Size = new System.Drawing.Size(1178, 117);
             this.panel1.TabIndex = 1;
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Location = new System.Drawing.Point(797, 69);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(96, 14);
+            this.labelControl11.TabIndex = 27;
+            this.labelControl11.Text = "标准模块资源集成";
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
+            this.simpleButton2.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton2.Location = new System.Drawing.Point(814, 3);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(60, 60);
+            this.simpleButton2.TabIndex = 26;
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Location = new System.Drawing.Point(713, 69);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(72, 14);
+            this.labelControl10.TabIndex = 25;
+            this.labelControl10.Text = "标准模块划分";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
+            this.simpleButton1.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.simpleButton1.Location = new System.Drawing.Point(725, 3);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(60, 60);
+            this.simpleButton1.TabIndex = 24;
             // 
             // labelControl9
             // 
-            this.labelControl9.Location = new System.Drawing.Point(488, 71);
+            this.labelControl9.Location = new System.Drawing.Point(630, 69);
             this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(24, 14);
-            this.labelControl9.TabIndex = 17;
-            this.labelControl9.Text = "计算";
+            this.labelControl9.Size = new System.Drawing.Size(72, 14);
+            this.labelControl9.TabIndex = 23;
+            this.labelControl9.Text = "排列布设模板";
             // 
             // bt_cala
             // 
             this.bt_cala.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.bt_cala.Image = ((System.Drawing.Image)(resources.GetObject("bt_cala.Image")));
             this.bt_cala.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.bt_cala.Location = new System.Drawing.Point(470, 5);
+            this.bt_cala.Location = new System.Drawing.Point(636, 3);
             this.bt_cala.Name = "bt_cala";
             this.bt_cala.Size = new System.Drawing.Size(60, 60);
-            this.bt_cala.TabIndex = 16;
+            this.bt_cala.TabIndex = 22;
             // 
             // labelControl8
             // 
-            this.labelControl8.Location = new System.Drawing.Point(904, 69);
+            this.labelControl8.Location = new System.Drawing.Point(518, 69);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(96, 14);
             this.labelControl8.TabIndex = 15;
-            this.labelControl8.Text = "重复排列数量计算";
+            this.labelControl8.Text = "重复排列埋置计算";
             // 
             // simpleButton8
             // 
             this.simpleButton8.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton8.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.Image")));
             this.simpleButton8.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton8.Location = new System.Drawing.Point(922, 3);
+            this.simpleButton8.Location = new System.Drawing.Point(536, 3);
             this.simpleButton8.Name = "simpleButton8";
             this.simpleButton8.Size = new System.Drawing.Size(60, 60);
             this.simpleButton8.TabIndex = 14;
             // 
-            // labelControl7
-            // 
-            this.labelControl7.Location = new System.Drawing.Point(792, 69);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(96, 14);
-            this.labelControl7.TabIndex = 13;
-            this.labelControl7.Text = "最少布设排列计算";
-            // 
-            // simpleButton7
-            // 
-            this.simpleButton7.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.simpleButton7.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.Image")));
-            this.simpleButton7.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton7.Location = new System.Drawing.Point(810, 3);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(60, 60);
-            this.simpleButton7.TabIndex = 12;
-            // 
             // labelControl6
             // 
-            this.labelControl6.Location = new System.Drawing.Point(680, 69);
+            this.labelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl6.LineLocation = DevExpress.XtraEditors.LineLocation.Center;
+            this.labelControl6.LineStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.labelControl6.LineVisible = true;
+            this.labelControl6.Location = new System.Drawing.Point(352, 64);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(96, 14);
+            this.labelControl6.Size = new System.Drawing.Size(157, 24);
             this.labelControl6.TabIndex = 11;
-            this.labelControl6.Text = "最大采集跑次计算";
+            this.labelControl6.Text = "装备投入、采集效率极值推算";
             // 
             // simpleButton6
             // 
             this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton6.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.Image")));
             this.simpleButton6.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton6.Location = new System.Drawing.Point(698, 3);
+            this.simpleButton6.Location = new System.Drawing.Point(363, 3);
             this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(60, 60);
+            this.simpleButton6.Size = new System.Drawing.Size(135, 60);
             this.simpleButton6.TabIndex = 10;
             // 
             // labelControl5
             // 
-            this.labelControl5.Location = new System.Drawing.Point(289, 68);
+            this.labelControl5.Location = new System.Drawing.Point(281, 68);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(48, 14);
+            this.labelControl5.Size = new System.Drawing.Size(60, 14);
             this.labelControl5.TabIndex = 9;
-            this.labelControl5.Text = "重新命名";
+            this.labelControl5.Text = "工作区命名";
             // 
             // sb_rename
             // 
@@ -222,7 +263,7 @@
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(235, 68);
+            this.labelControl4.Location = new System.Drawing.Point(177, 68);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(24, 14);
             this.labelControl4.TabIndex = 7;
@@ -233,14 +274,14 @@
             this.sb_import.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.sb_import.Image = ((System.Drawing.Image)(resources.GetObject("sb_import.Image")));
             this.sb_import.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.sb_import.Location = new System.Drawing.Point(216, 2);
+            this.sb_import.Location = new System.Drawing.Point(158, 2);
             this.sb_import.Name = "sb_import";
             this.sb_import.Size = new System.Drawing.Size(60, 60);
             this.sb_import.TabIndex = 6;
             // 
             // labelControl3
             // 
-            this.labelControl3.Location = new System.Drawing.Point(169, 68);
+            this.labelControl3.Location = new System.Drawing.Point(235, 68);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(24, 14);
             this.labelControl3.TabIndex = 5;
@@ -251,7 +292,7 @@
             this.sb_extend.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.sb_extend.Image = ((System.Drawing.Image)(resources.GetObject("sb_extend.Image")));
             this.sb_extend.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.sb_extend.Location = new System.Drawing.Point(151, 2);
+            this.sb_extend.Location = new System.Drawing.Point(217, 2);
             this.sb_extend.Name = "sb_extend";
             this.sb_extend.Size = new System.Drawing.Size(60, 60);
             this.sb_extend.TabIndex = 4;
@@ -301,7 +342,7 @@
             this.lb_workspace_name.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lb_workspace_name.Location = new System.Drawing.Point(3, 3);
             this.lb_workspace_name.Name = "lb_workspace_name";
-            this.lb_workspace_name.Size = new System.Drawing.Size(1020, 34);
+            this.lb_workspace_name.Size = new System.Drawing.Size(1178, 34);
             this.lb_workspace_name.TabIndex = 2;
             this.lb_workspace_name.Text = "新工作区";
             // 
@@ -309,13 +350,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1026, 687);
+            this.ClientSize = new System.Drawing.Size(1184, 861);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.Text = "MainForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
+            this.xtraTabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -340,13 +383,16 @@
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.SimpleButton sb_rename;
         private DevExpress.XtraEditors.LabelControl labelControl6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
+        private DevExpress.XtraEditors.LabelControl lb_workspace_name;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.SimpleButton bt_cala;
-        private DevExpress.XtraEditors.LabelControl lb_workspace_name;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private working.NepCalaTable nepCalaTable1;
     }
 }

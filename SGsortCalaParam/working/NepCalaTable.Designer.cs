@@ -29,54 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SplineSeriesView splineSeriesView1 = new DevExpress.XtraCharts.SplineSeriesView();
-            DevExpress.XtraCharts.XYDiagram xyDiagram2 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SplineSeriesView splineSeriesView2 = new DevExpress.XtraCharts.SplineSeriesView();
-            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SplineSeriesView splineSeriesView3 = new DevExpress.XtraCharts.SplineSeriesView();
-            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SplineSeriesView splineSeriesView4 = new DevExpress.XtraCharts.SplineSeriesView();
-            this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
-            this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit_zjjieshouxianshu1 = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit_zjpaoxianshu1 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit_jieshouxianshu1 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit_daoju1 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit_paoxianju1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit_jieshoudianshu1 = new DevExpress.XtraEditors.TextEdit();
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
-            this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.labelControl17 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit_mubanpaoshu2 = new DevExpress.XtraEditors.TextEdit();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit_zjjieshouxianshu2 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl16 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit_zjpaoxianshu2 = new DevExpress.XtraEditors.TextEdit();
-            this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
-            this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.chartControl3 = new DevExpress.XtraCharts.ChartControl();
-            this.navigationPage4 = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.result = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -90,14 +42,35 @@
             this.zongxiangchang = new DevExpress.XtraGrid.Columns.GridColumn();
             this.zonghengbi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.textEdit_jsdaoshu = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit_jsdaoshu = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit_zongdaoshu = new DevExpress.XtraEditors.TextEdit();
             this.textEdit_paoci = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit_zongdianshu = new DevExpress.XtraEditors.TextEdit();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -106,42 +79,21 @@
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.popupMenu1 = new DevExpress.XtraBars.PopupMenu(this.components);
-            this.navigationPane1.SuspendLayout();
-            this.navigationPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjjieshouxianshu1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjpaoxianshu1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_jieshouxianshu1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_daoju1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoxianju1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_jieshoudianshu1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView1)).BeginInit();
-            this.navigationPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_mubanpaoshu2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjjieshouxianshu2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjpaoxianshu2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView2)).BeginInit();
-            this.navigationPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView4)).BeginInit();
-            this.navigationPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_jsdaoshu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdaoshu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoci.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdianshu.Properties)).BeginInit();
@@ -149,392 +101,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.popupMenu1)).BeginInit();
             this.SuspendLayout();
             // 
-            // navigationPane1
-            // 
-            this.navigationPane1.Controls.Add(this.navigationPage1);
-            this.navigationPane1.Controls.Add(this.navigationPage2);
-            this.navigationPane1.Controls.Add(this.navigationPage3);
-            this.navigationPane1.Controls.Add(this.navigationPage4);
-            this.navigationPane1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.navigationPane1.Location = new System.Drawing.Point(0, 0);
-            this.navigationPane1.Name = "navigationPane1";
-            this.navigationPane1.PageProperties.ShowMode = DevExpress.XtraBars.Navigation.ItemShowMode.ImageAndText;
-            this.navigationPane1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
-            this.navigationPage1,
-            this.navigationPage2,
-            this.navigationPage3,
-            this.navigationPage4});
-            this.navigationPane1.RegularSize = new System.Drawing.Size(900, 600);
-            this.navigationPane1.SelectedPage = this.navigationPage2;
-            this.navigationPane1.SelectedPageIndex = 0;
-            this.navigationPane1.Size = new System.Drawing.Size(112, 600);
-            this.navigationPane1.State = DevExpress.XtraBars.Navigation.NavigationPaneState.Collapsed;
-            this.navigationPane1.TabIndex = 0;
-            this.navigationPane1.Text = "图1";
-            this.navigationPane1.Visible = false;
-            // 
-            // navigationPage1
-            // 
-            this.navigationPage1.Caption = "图表1";
-            this.navigationPage1.Controls.Add(this.labelControl9);
-            this.navigationPage1.Controls.Add(this.textEdit_zjjieshouxianshu1);
-            this.navigationPage1.Controls.Add(this.simpleButton2);
-            this.navigationPage1.Controls.Add(this.labelControl14);
-            this.navigationPage1.Controls.Add(this.textEdit_zjpaoxianshu1);
-            this.navigationPage1.Controls.Add(this.labelControl13);
-            this.navigationPage1.Controls.Add(this.textEdit_jieshouxianshu1);
-            this.navigationPage1.Controls.Add(this.labelControl11);
-            this.navigationPage1.Controls.Add(this.textEdit_daoju1);
-            this.navigationPage1.Controls.Add(this.labelControl12);
-            this.navigationPage1.Controls.Add(this.labelControl10);
-            this.navigationPage1.Controls.Add(this.textEdit_paoxianju1);
-            this.navigationPage1.Controls.Add(this.textEdit_jieshoudianshu1);
-            this.navigationPage1.Controls.Add(this.chartControl1);
-            this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(0, 112);
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Location = new System.Drawing.Point(446, 49);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(103, 14);
-            this.labelControl9.TabIndex = 15;
-            this.labelControl9.Text = "增加接收线数（n）";
-            // 
-            // textEdit_zjjieshouxianshu1
-            // 
-            this.textEdit_zjjieshouxianshu1.Location = new System.Drawing.Point(555, 46);
-            this.textEdit_zjjieshouxianshu1.Name = "textEdit_zjjieshouxianshu1";
-            this.textEdit_zjjieshouxianshu1.Size = new System.Drawing.Size(100, 20);
-            this.textEdit_zjjieshouxianshu1.TabIndex = 14;
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.simpleButton2.Location = new System.Drawing.Point(667, 35);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(100, 29);
-            this.simpleButton2.TabIndex = 13;
-            this.simpleButton2.Text = "运算";
-            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
-            // 
-            // labelControl14
-            // 
-            this.labelControl14.Location = new System.Drawing.Point(208, 49);
-            this.labelControl14.Name = "labelControl14";
-            this.labelControl14.Size = new System.Drawing.Size(94, 14);
-            this.labelControl14.TabIndex = 12;
-            this.labelControl14.Text = "增加炮线数（m）";
-            // 
-            // textEdit_zjpaoxianshu1
-            // 
-            this.textEdit_zjpaoxianshu1.Location = new System.Drawing.Point(308, 46);
-            this.textEdit_zjpaoxianshu1.Name = "textEdit_zjpaoxianshu1";
-            this.textEdit_zjpaoxianshu1.Size = new System.Drawing.Size(100, 20);
-            this.textEdit_zjpaoxianshu1.TabIndex = 11;
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Location = new System.Drawing.Point(3, 49);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(79, 14);
-            this.labelControl13.TabIndex = 10;
-            this.labelControl13.Text = "接收线数（R）";
-            // 
-            // textEdit_jieshouxianshu1
-            // 
-            this.textEdit_jieshouxianshu1.Location = new System.Drawing.Point(88, 46);
-            this.textEdit_jieshouxianshu1.Name = "textEdit_jieshouxianshu1";
-            this.textEdit_jieshouxianshu1.Size = new System.Drawing.Size(100, 20);
-            this.textEdit_jieshouxianshu1.TabIndex = 9;
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Location = new System.Drawing.Point(481, 17);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(68, 14);
-            this.labelControl11.TabIndex = 8;
-            this.labelControl11.Text = "道距 （△X）";
-            // 
-            // textEdit_daoju1
-            // 
-            this.textEdit_daoju1.Location = new System.Drawing.Point(555, 14);
-            this.textEdit_daoju1.Name = "textEdit_daoju1";
-            this.textEdit_daoju1.Size = new System.Drawing.Size(100, 20);
-            this.textEdit_daoju1.TabIndex = 7;
-            // 
-            // labelControl12
-            // 
-            this.labelControl12.Location = new System.Drawing.Point(208, 17);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(75, 14);
-            this.labelControl12.TabIndex = 6;
-            this.labelControl12.Text = "激发线距(SLI)";
-            // 
-            // labelControl10
-            // 
-            this.labelControl10.Location = new System.Drawing.Point(34, 16);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(48, 14);
-            this.labelControl10.TabIndex = 4;
-            this.labelControl10.Text = "接收点数";
-            // 
-            // textEdit_paoxianju1
-            // 
-            this.textEdit_paoxianju1.Location = new System.Drawing.Point(308, 14);
-            this.textEdit_paoxianju1.Name = "textEdit_paoxianju1";
-            this.textEdit_paoxianju1.Size = new System.Drawing.Size(100, 20);
-            this.textEdit_paoxianju1.TabIndex = 3;
-            // 
-            // textEdit_jieshoudianshu1
-            // 
-            this.textEdit_jieshoudianshu1.Location = new System.Drawing.Point(88, 14);
-            this.textEdit_jieshoudianshu1.Name = "textEdit_jieshoudianshu1";
-            this.textEdit_jieshoudianshu1.Size = new System.Drawing.Size(100, 20);
-            this.textEdit_jieshoudianshu1.TabIndex = 2;
-            // 
-            // chartControl1
-            // 
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
-            this.chartControl1.Location = new System.Drawing.Point(0, 79);
-            this.chartControl1.Name = "chartControl1";
-            series1.LabelsVisibility = DevExpress.Utils.DefaultBoolean.True;
-            series1.Name = "设备数";
-            series1.View = splineSeriesView1;
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1};
-            this.chartControl1.Size = new System.Drawing.Size(767, 451);
-            this.chartControl1.TabIndex = 0;
-            // 
-            // navigationPage2
-            // 
-            this.navigationPage2.Caption = "图表2";
-            this.navigationPage2.Controls.Add(this.labelControl17);
-            this.navigationPage2.Controls.Add(this.textEdit_mubanpaoshu2);
-            this.navigationPage2.Controls.Add(this.simpleButton3);
-            this.navigationPage2.Controls.Add(this.labelControl15);
-            this.navigationPage2.Controls.Add(this.textEdit_zjjieshouxianshu2);
-            this.navigationPage2.Controls.Add(this.labelControl16);
-            this.navigationPage2.Controls.Add(this.textEdit_zjpaoxianshu2);
-            this.navigationPage2.Controls.Add(this.chartControl2);
-            this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(0, 112);
-            // 
-            // labelControl17
-            // 
-            this.labelControl17.Location = new System.Drawing.Point(458, 20);
-            this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(72, 14);
-            this.labelControl17.TabIndex = 22;
-            this.labelControl17.Text = "单元模板炮数";
-            // 
-            // textEdit_mubanpaoshu2
-            // 
-            this.textEdit_mubanpaoshu2.Location = new System.Drawing.Point(536, 17);
-            this.textEdit_mubanpaoshu2.Name = "textEdit_mubanpaoshu2";
-            this.textEdit_mubanpaoshu2.Size = new System.Drawing.Size(100, 20);
-            this.textEdit_mubanpaoshu2.TabIndex = 21;
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
-            this.simpleButton3.Location = new System.Drawing.Point(657, 14);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(100, 29);
-            this.simpleButton3.TabIndex = 20;
-            this.simpleButton3.Text = "运算";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
-            // 
-            // labelControl15
-            // 
-            this.labelControl15.Location = new System.Drawing.Point(222, 20);
-            this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(103, 14);
-            this.labelControl15.TabIndex = 19;
-            this.labelControl15.Text = "增加接收线数（n）";
-            // 
-            // textEdit_zjjieshouxianshu2
-            // 
-            this.textEdit_zjjieshouxianshu2.Location = new System.Drawing.Point(331, 17);
-            this.textEdit_zjjieshouxianshu2.Name = "textEdit_zjjieshouxianshu2";
-            this.textEdit_zjjieshouxianshu2.Size = new System.Drawing.Size(100, 20);
-            this.textEdit_zjjieshouxianshu2.TabIndex = 18;
-            // 
-            // labelControl16
-            // 
-            this.labelControl16.Location = new System.Drawing.Point(16, 20);
-            this.labelControl16.Name = "labelControl16";
-            this.labelControl16.Size = new System.Drawing.Size(94, 14);
-            this.labelControl16.TabIndex = 17;
-            this.labelControl16.Text = "增加炮线数（m）";
-            // 
-            // textEdit_zjpaoxianshu2
-            // 
-            this.textEdit_zjpaoxianshu2.Location = new System.Drawing.Point(116, 17);
-            this.textEdit_zjpaoxianshu2.Name = "textEdit_zjpaoxianshu2";
-            this.textEdit_zjpaoxianshu2.Size = new System.Drawing.Size(100, 20);
-            this.textEdit_zjpaoxianshu2.TabIndex = 16;
-            // 
-            // chartControl2
-            // 
-            xyDiagram2.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram2.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl2.Diagram = xyDiagram2;
-            this.chartControl2.Location = new System.Drawing.Point(3, 57);
-            this.chartControl2.Name = "chartControl2";
-            series2.Name = "激发炮数";
-            series2.View = splineSeriesView2;
-            this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series2};
-            this.chartControl2.Size = new System.Drawing.Size(767, 480);
-            this.chartControl2.TabIndex = 0;
-            // 
-            // navigationPage3
-            // 
-            this.navigationPage3.Caption = "图表3";
-            this.navigationPage3.Controls.Add(this.chartControl3);
-            this.navigationPage3.Name = "navigationPage3";
-            this.navigationPage3.Size = new System.Drawing.Size(0, 112);
-            // 
-            // chartControl3
-            // 
-            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl3.Diagram = xyDiagram3;
-            this.chartControl3.Location = new System.Drawing.Point(3, 70);
-            this.chartControl3.Name = "chartControl3";
-            series3.Name = "8064模板";
-            series3.View = splineSeriesView3;
-            series4.Name = "9680模板";
-            series4.View = splineSeriesView4;
-            this.chartControl3.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series3,
-        series4};
-            this.chartControl3.Size = new System.Drawing.Size(764, 467);
-            this.chartControl3.TabIndex = 0;
-            // 
-            // navigationPage4
-            // 
-            this.navigationPage4.Caption = "重复排列埋置数量";
-            this.navigationPage4.Controls.Add(this.simpleButton1);
-            this.navigationPage4.Controls.Add(this.result);
-            this.navigationPage4.Controls.Add(this.labelControl8);
-            this.navigationPage4.Controls.Add(this.textEdit3);
-            this.navigationPage4.Controls.Add(this.textEdit2);
-            this.navigationPage4.Controls.Add(this.textEdit1);
-            this.navigationPage4.Controls.Add(this.labelControl7);
-            this.navigationPage4.Controls.Add(this.labelControl5);
-            this.navigationPage4.Controls.Add(this.labelControl4);
-            this.navigationPage4.Name = "navigationPage4";
-            this.navigationPage4.Size = new System.Drawing.Size(0, 112);
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(144, 306);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(341, 52);
-            this.simpleButton1.TabIndex = 8;
-            this.simpleButton1.Text = "运算";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
-            // result
-            // 
-            this.result.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.result.Appearance.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.result.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.result.Location = new System.Drawing.Point(297, 364);
-            this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(214, 38);
-            this.result.TabIndex = 7;
-            this.result.Text = "整个工区设计接收线条数";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Coral;
-            this.labelControl8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl8.Location = new System.Drawing.Point(77, 364);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(214, 38);
-            this.labelControl8.TabIndex = 6;
-            this.labelControl8.Text = "整个工区设计接收线条数";
-            // 
-            // textEdit3
-            // 
-            this.textEdit3.Location = new System.Drawing.Point(297, 243);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Properties.AutoHeight = false;
-            this.textEdit3.Size = new System.Drawing.Size(188, 35);
-            this.textEdit3.TabIndex = 5;
-            // 
-            // textEdit2
-            // 
-            this.textEdit2.Location = new System.Drawing.Point(297, 181);
-            this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Properties.AutoHeight = false;
-            this.textEdit2.Size = new System.Drawing.Size(188, 35);
-            this.textEdit2.TabIndex = 4;
-            // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(297, 119);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.AutoHeight = false;
-            this.textEdit1.Size = new System.Drawing.Size(188, 35);
-            this.textEdit1.TabIndex = 3;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl7.Location = new System.Drawing.Point(77, 240);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(214, 38);
-            this.labelControl7.TabIndex = 2;
-            this.labelControl7.Text = "整个工区设计接收线条数";
-            // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl5.Location = new System.Drawing.Point(60, 178);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(231, 38);
-            this.labelControl5.TabIndex = 1;
-            this.labelControl5.Text = "整个工区设计单接收线道数";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl4.Location = new System.Drawing.Point(203, 116);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(88, 38);
-            this.labelControl4.TabIndex = 0;
-            this.labelControl4.Text = "施工轮次";
-            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.gridControl1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 5, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(112, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(788, 600);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1016, 696);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // gridControl1
@@ -544,7 +124,7 @@
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Name = "gridControl1";
             this.tableLayoutPanel1.SetRowSpan(this.gridControl1, 2);
-            this.gridControl1.Size = new System.Drawing.Size(782, 514);
+            this.gridControl1.Size = new System.Drawing.Size(1010, 610);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -681,68 +261,315 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 4;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel2.Controls.Add(this.textEdit_jsdaoshu, 3, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textEdit_zongdaoshu, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.textEdit_paoci, 3, 0);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl6, 2, 1);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl3, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl2, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.labelControl1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.textEdit_zongdianshu, 1, 0);
+            this.tableLayoutPanel2.ColumnCount = 10;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 84F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 87F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 72F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 111F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 118F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 64F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 178F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 62F));
+            this.tableLayoutPanel2.Controls.Add(this.textEdit12, 7, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit11, 7, 1);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit_jsdaoshu, 6, 1);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl15, 6, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit9, 5, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit8, 5, 2);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit7, 5, 1);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl13, 4, 2);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl12, 4, 1);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl11, 4, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit6, 3, 2);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit5, 3, 1);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit4, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl10, 2, 2);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl9, 2, 1);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl8, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit3, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit2, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit1, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl7, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl5, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl4, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit_zongdaoshu, 9, 1);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit_paoci, 9, 2);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl3, 8, 2);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl2, 8, 1);
+            this.tableLayoutPanel2.Controls.Add(this.labelControl1, 8, 0);
+            this.tableLayoutPanel2.Controls.Add(this.textEdit_zongdianshu, 9, 0);
+            this.tableLayoutPanel2.Controls.Add(this.simpleButton1, 6, 2);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(782, 74);
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.03491F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.53705F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.42804F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1010, 74);
             this.tableLayoutPanel2.TabIndex = 2;
+            // 
+            // textEdit12
+            // 
+            this.textEdit12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit12.Location = new System.Drawing.Point(605, 3);
+            this.textEdit12.Name = "textEdit12";
+            this.textEdit12.Properties.AutoHeight = false;
+            this.textEdit12.Size = new System.Drawing.Size(58, 18);
+            this.textEdit12.TabIndex = 33;
+            // 
+            // textEdit11
+            // 
+            this.textEdit11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit11.Location = new System.Drawing.Point(605, 27);
+            this.textEdit11.Name = "textEdit11";
+            this.textEdit11.Properties.AutoHeight = false;
+            this.textEdit11.Size = new System.Drawing.Size(58, 18);
+            this.textEdit11.TabIndex = 32;
             // 
             // textEdit_jsdaoshu
             // 
+            this.textEdit_jsdaoshu.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.textEdit_jsdaoshu.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.textEdit_jsdaoshu.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.textEdit_jsdaoshu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit_jsdaoshu.Location = new System.Drawing.Point(588, 40);
+            this.textEdit_jsdaoshu.Location = new System.Drawing.Point(487, 27);
+            this.textEdit_jsdaoshu.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.textEdit_jsdaoshu.Name = "textEdit_jsdaoshu";
-            this.textEdit_jsdaoshu.Properties.AutoHeight = false;
-            this.textEdit_jsdaoshu.Size = new System.Drawing.Size(191, 31);
-            this.textEdit_jsdaoshu.TabIndex = 9;
-            this.textEdit_jsdaoshu.Visible = false;
+            this.textEdit_jsdaoshu.Size = new System.Drawing.Size(103, 18);
+            this.textEdit_jsdaoshu.TabIndex = 30;
+            this.textEdit_jsdaoshu.Text = "纵向滚动道数";
+            // 
+            // labelControl15
+            // 
+            this.labelControl15.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl15.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl15.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl15.Location = new System.Drawing.Point(487, 3);
+            this.labelControl15.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl15.Name = "labelControl15";
+            this.labelControl15.Size = new System.Drawing.Size(103, 18);
+            this.labelControl15.TabIndex = 29;
+            this.labelControl15.Text = "布设接收线数";
+            // 
+            // textEdit9
+            // 
+            this.textEdit9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit9.Location = new System.Drawing.Point(422, 3);
+            this.textEdit9.Name = "textEdit9";
+            this.textEdit9.Properties.AutoHeight = false;
+            this.textEdit9.Size = new System.Drawing.Size(59, 18);
+            this.textEdit9.TabIndex = 27;
+            // 
+            // textEdit8
+            // 
+            this.textEdit8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit8.Location = new System.Drawing.Point(422, 51);
+            this.textEdit8.Name = "textEdit8";
+            this.textEdit8.Properties.AutoHeight = false;
+            this.textEdit8.Size = new System.Drawing.Size(59, 20);
+            this.textEdit8.TabIndex = 26;
+            // 
+            // textEdit7
+            // 
+            this.textEdit7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit7.Location = new System.Drawing.Point(422, 27);
+            this.textEdit7.Name = "textEdit7";
+            this.textEdit7.Properties.AutoHeight = false;
+            this.textEdit7.Size = new System.Drawing.Size(59, 18);
+            this.textEdit7.TabIndex = 25;
+            // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl13.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl13.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl13.Location = new System.Drawing.Point(311, 51);
+            this.labelControl13.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(96, 20);
+            this.labelControl13.TabIndex = 24;
+            this.labelControl13.Text = "模板横向滚动";
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl12.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl12.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl12.Location = new System.Drawing.Point(311, 27);
+            this.labelControl12.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(96, 18);
+            this.labelControl12.TabIndex = 23;
+            this.labelControl12.Text = "模板纵向滚动";
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl11.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl11.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl11.Location = new System.Drawing.Point(311, 3);
+            this.labelControl11.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(96, 18);
+            this.labelControl11.TabIndex = 22;
+            this.labelControl11.Text = "模板炮";
+            // 
+            // textEdit6
+            // 
+            this.textEdit6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit6.Location = new System.Drawing.Point(239, 51);
+            this.textEdit6.Name = "textEdit6";
+            this.textEdit6.Properties.AutoHeight = false;
+            this.textEdit6.Size = new System.Drawing.Size(66, 20);
+            this.textEdit6.TabIndex = 21;
+            // 
+            // textEdit5
+            // 
+            this.textEdit5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit5.Location = new System.Drawing.Point(239, 27);
+            this.textEdit5.Name = "textEdit5";
+            this.textEdit5.Properties.AutoHeight = false;
+            this.textEdit5.Size = new System.Drawing.Size(66, 18);
+            this.textEdit5.TabIndex = 20;
+            // 
+            // textEdit4
+            // 
+            this.textEdit4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit4.Location = new System.Drawing.Point(239, 3);
+            this.textEdit4.Name = "textEdit4";
+            this.textEdit4.Properties.AutoHeight = false;
+            this.textEdit4.Size = new System.Drawing.Size(66, 18);
+            this.textEdit4.TabIndex = 19;
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl10.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl10.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl10.Location = new System.Drawing.Point(152, 51);
+            this.labelControl10.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(72, 20);
+            this.labelControl10.TabIndex = 18;
+            this.labelControl10.Text = "接收点数";
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl9.Location = new System.Drawing.Point(152, 27);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(72, 18);
+            this.labelControl9.TabIndex = 17;
+            this.labelControl9.Text = "接收线数";
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl8.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl8.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl8.Location = new System.Drawing.Point(152, 3);
+            this.labelControl8.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(72, 18);
+            this.labelControl8.TabIndex = 16;
+            this.labelControl8.Text = "接收线距";
+            // 
+            // textEdit3
+            // 
+            this.textEdit3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit3.Location = new System.Drawing.Point(87, 51);
+            this.textEdit3.Name = "textEdit3";
+            this.textEdit3.Properties.AutoHeight = false;
+            this.textEdit3.Size = new System.Drawing.Size(59, 20);
+            this.textEdit3.TabIndex = 15;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit2.Location = new System.Drawing.Point(87, 27);
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Properties.AutoHeight = false;
+            this.textEdit2.Size = new System.Drawing.Size(59, 18);
+            this.textEdit2.TabIndex = 14;
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textEdit1.Location = new System.Drawing.Point(87, 3);
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Properties.AutoHeight = false;
+            this.textEdit1.Size = new System.Drawing.Size(59, 18);
+            this.textEdit1.TabIndex = 13;
+            // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl7.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl7.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl7.Location = new System.Drawing.Point(3, 51);
+            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(69, 20);
+            this.labelControl7.TabIndex = 12;
+            this.labelControl7.Text = "接收点距";
+            // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl5.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl5.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl5.Location = new System.Drawing.Point(3, 27);
+            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(69, 18);
+            this.labelControl5.TabIndex = 11;
+            this.labelControl5.Text = "激发线距";
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl4.Location = new System.Drawing.Point(3, 3);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(69, 18);
+            this.labelControl4.TabIndex = 10;
+            this.labelControl4.Text = "激发点距";
             // 
             // textEdit_zongdaoshu
             // 
             this.textEdit_zongdaoshu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit_zongdaoshu.Location = new System.Drawing.Point(159, 40);
+            this.textEdit_zongdaoshu.Location = new System.Drawing.Point(847, 27);
             this.textEdit_zongdaoshu.Name = "textEdit_zongdaoshu";
             this.textEdit_zongdaoshu.Properties.AutoHeight = false;
-            this.textEdit_zongdaoshu.Size = new System.Drawing.Size(228, 31);
+            this.textEdit_zongdaoshu.Size = new System.Drawing.Size(160, 18);
             this.textEdit_zongdaoshu.TabIndex = 8;
             // 
             // textEdit_paoci
             // 
             this.textEdit_paoci.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit_paoci.Location = new System.Drawing.Point(588, 3);
+            this.textEdit_paoci.Location = new System.Drawing.Point(847, 51);
             this.textEdit_paoci.Name = "textEdit_paoci";
             this.textEdit_paoci.Properties.AutoHeight = false;
-            this.textEdit_paoci.Size = new System.Drawing.Size(191, 31);
+            this.textEdit_paoci.Size = new System.Drawing.Size(160, 20);
             this.textEdit_paoci.TabIndex = 7;
-            // 
-            // labelControl6
-            // 
-            this.labelControl6.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelControl6.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl6.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl6.Location = new System.Drawing.Point(393, 40);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
-            this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(180, 31);
-            this.labelControl6.TabIndex = 5;
-            this.labelControl6.Text = "布设接受线单线接收道数";
-            this.labelControl6.Visible = false;
             // 
             // labelControl3
             // 
@@ -750,10 +577,10 @@
             this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl3.Location = new System.Drawing.Point(393, 3);
+            this.labelControl3.Location = new System.Drawing.Point(669, 51);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(180, 31);
+            this.labelControl3.Size = new System.Drawing.Size(163, 20);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "布设排列片可采集炮次";
             // 
@@ -763,10 +590,10 @@
             this.labelControl2.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl2.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl2.Location = new System.Drawing.Point(3, 40);
+            this.labelControl2.Location = new System.Drawing.Point(669, 27);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(141, 31);
+            this.labelControl2.Size = new System.Drawing.Size(163, 18);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "纵向滚动道数";
             // 
@@ -776,21 +603,30 @@
             this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
             this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.labelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl1.Location = new System.Drawing.Point(3, 3);
+            this.labelControl1.Location = new System.Drawing.Point(669, 3);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(141, 31);
+            this.labelControl1.Size = new System.Drawing.Size(163, 18);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "总接收点数";
             // 
             // textEdit_zongdianshu
             // 
             this.textEdit_zongdianshu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textEdit_zongdianshu.Location = new System.Drawing.Point(159, 3);
+            this.textEdit_zongdianshu.Location = new System.Drawing.Point(847, 3);
             this.textEdit_zongdianshu.Name = "textEdit_zongdianshu";
             this.textEdit_zongdianshu.Properties.AutoHeight = false;
-            this.textEdit_zongdianshu.Size = new System.Drawing.Size(228, 31);
+            this.textEdit_zongdianshu.Size = new System.Drawing.Size(160, 18);
             this.textEdit_zongdianshu.TabIndex = 6;
+            // 
+            // simpleButton1
+            // 
+            this.tableLayoutPanel2.SetColumnSpan(this.simpleButton1, 2);
+            this.simpleButton1.Location = new System.Drawing.Point(487, 51);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(176, 20);
+            this.simpleButton1.TabIndex = 34;
+            this.simpleButton1.Text = "计算";
             // 
             // barManager1
             // 
@@ -809,28 +645,28 @@
             this.barDockControlTop.CausesValidation = false;
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlTop.Size = new System.Drawing.Size(900, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(1016, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 600);
-            this.barDockControlBottom.Size = new System.Drawing.Size(900, 0);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 696);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1016, 0);
             // 
             // barDockControlLeft
             // 
             this.barDockControlLeft.CausesValidation = false;
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 600);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 696);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(900, 0);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 600);
+            this.barDockControlRight.Location = new System.Drawing.Point(1016, 0);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 696);
             // 
             // barButtonItem1
             // 
@@ -858,52 +694,28 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.navigationPane1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "NepCalaTable";
-            this.Size = new System.Drawing.Size(900, 600);
+            this.Size = new System.Drawing.Size(1016, 696);
             this.Load += new System.EventHandler(this.NepCalaTable_Load);
-            this.navigationPane1.ResumeLayout(false);
-            this.navigationPage1.ResumeLayout(false);
-            this.navigationPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjjieshouxianshu1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjpaoxianshu1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_jieshouxianshu1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_daoju1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoxianju1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_jieshoudianshu1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
-            this.navigationPage2.ResumeLayout(false);
-            this.navigationPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_mubanpaoshu2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjjieshouxianshu2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_zjpaoxianshu2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
-            this.navigationPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(splineSeriesView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl3)).EndInit();
-            this.navigationPage4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit_jsdaoshu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdaoshu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_paoci.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit_zongdianshu.Properties)).EndInit();
@@ -915,19 +727,12 @@
         }
 
         #endregion
-
-        private DevExpress.XtraBars.Navigation.NavigationPane navigationPane1;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage2;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraGrid.Columns.GridColumn bushe_xianshu;
         private DevExpress.XtraGrid.Columns.GridColumn bushe_daoshu;
         private DevExpress.XtraGrid.Columns.GridColumn bushe_zongdaoshu;
@@ -938,42 +743,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn zongxiangchang;
         private DevExpress.XtraGrid.Columns.GridColumn zonghengbi;
         private DevExpress.XtraEditors.TextEdit textEdit_zongdianshu;
-        private DevExpress.XtraEditors.TextEdit textEdit_jsdaoshu;
         private DevExpress.XtraEditors.TextEdit textEdit_zongdaoshu;
         private DevExpress.XtraEditors.TextEdit textEdit_paoci;
-        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage4;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.LabelControl labelControl5;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
-        private DevExpress.XtraEditors.TextEdit textEdit2;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
-        private DevExpress.XtraEditors.LabelControl result;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraCharts.ChartControl chartControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl12;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.TextEdit textEdit_paoxianju1;
-        private DevExpress.XtraEditors.TextEdit textEdit_jieshoudianshu1;
-        private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.TextEdit textEdit_jieshouxianshu1;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
-        private DevExpress.XtraEditors.TextEdit textEdit_daoju1;
-        private DevExpress.XtraEditors.LabelControl labelControl14;
-        private DevExpress.XtraEditors.TextEdit textEdit_zjpaoxianshu1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.TextEdit textEdit_zjjieshouxianshu1;
-        private DevExpress.XtraCharts.ChartControl chartControl2;
-        private DevExpress.XtraCharts.ChartControl chartControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.TextEdit textEdit_zjjieshouxianshu2;
-        private DevExpress.XtraEditors.LabelControl labelControl16;
-        private DevExpress.XtraEditors.TextEdit textEdit_zjpaoxianshu2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.LabelControl labelControl17;
-        private DevExpress.XtraEditors.TextEdit textEdit_mubanpaoshu2;
         private DevExpress.XtraBars.BarManager barManager1;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
         private DevExpress.XtraBars.BarDockControl barDockControlBottom;
@@ -982,5 +753,29 @@
         private DevExpress.XtraBars.PopupMenu popupMenu1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
+        private DevExpress.XtraEditors.LabelControl labelControl9;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit textEdit5;
+        private DevExpress.XtraEditors.TextEdit textEdit6;
+        private DevExpress.XtraEditors.LabelControl labelControl11;
+        private DevExpress.XtraEditors.LabelControl labelControl12;
+        private DevExpress.XtraEditors.LabelControl labelControl13;
+        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private DevExpress.XtraEditors.TextEdit textEdit8;
+        private DevExpress.XtraEditors.TextEdit textEdit9;
+        private DevExpress.XtraEditors.LabelControl textEdit_jsdaoshu;
+        private DevExpress.XtraEditors.LabelControl labelControl15;
+        private DevExpress.XtraEditors.TextEdit textEdit11;
+        private DevExpress.XtraEditors.TextEdit textEdit12;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }

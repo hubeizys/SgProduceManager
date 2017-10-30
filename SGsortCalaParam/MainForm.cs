@@ -12,6 +12,7 @@ namespace SGsortCalaParam
 {
     public partial class MainForm : DevExpress.XtraEditors.XtraForm
     {
+        working.NepCalaTable active_nepCalaTable = null;
         public MainForm()
         {
             InitializeComponent();

@@ -115,6 +115,8 @@ namespace SGsortCalaParam.working
         }
         #endregion
 
+
+        /*
         private void simpleButton2_Click(object sender, EventArgs e)
         {
             int i_jieshoudianshu;
@@ -176,6 +178,7 @@ namespace SGsortCalaParam.working
             }
 
         }
+        */
 
         #region 激发炮数
         /// <summary>
@@ -193,6 +196,7 @@ namespace SGsortCalaParam.working
         #endregion
 
 
+        /*
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
@@ -232,7 +236,7 @@ namespace SGsortCalaParam.working
                 MessageBox.Show(string.Format(" 生成节点出现了错误 {0}", err.Message));
             }
         }
-
+        */
         private void NepCalaTable_Load(object sender, EventArgs e)
         {
             dt  = new DataTable();
