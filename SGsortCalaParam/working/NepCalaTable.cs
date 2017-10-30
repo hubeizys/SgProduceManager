@@ -49,8 +49,8 @@ namespace SGsortCalaParam.working
         public string
             GDDaoshu
         {
-            get { return this.textEdit_zongdaoshu.Text.ToString(); }
-            set { this.textEdit_zongdaoshu.Text = value; }
+            get { return this.textEdit9.Text.ToString(); }
+            set { this.textEdit9.Text = value; }
         }
 
         public string 
