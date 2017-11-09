@@ -42,7 +42,7 @@
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.bt_cala = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.bt_chongfupailiemaizhijisuan = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -118,7 +118,7 @@
             // xtraTabPage2
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(791, 686);
+            this.xtraTabPage2.Size = new System.Drawing.Size(891, 686);
             this.xtraTabPage2.Text = "工作区2";
             // 
             // panel1
@@ -130,7 +130,7 @@
             this.panel1.Controls.Add(this.labelControl9);
             this.panel1.Controls.Add(this.bt_cala);
             this.panel1.Controls.Add(this.labelControl8);
-            this.panel1.Controls.Add(this.simpleButton8);
+            this.panel1.Controls.Add(this.bt_chongfupailiemaizhijisuan);
             this.panel1.Controls.Add(this.labelControl6);
             this.panel1.Controls.Add(this.simpleButton6);
             this.panel1.Controls.Add(this.labelControl5);
@@ -211,15 +211,16 @@
             this.labelControl8.TabIndex = 15;
             this.labelControl8.Text = "重复排列埋置计算";
             // 
-            // simpleButton8
+            // bt_chongfupailiemaizhijisuan
             // 
-            this.simpleButton8.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.simpleButton8.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.Image")));
-            this.simpleButton8.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton8.Location = new System.Drawing.Point(536, 3);
-            this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(60, 60);
-            this.simpleButton8.TabIndex = 14;
+            this.bt_chongfupailiemaizhijisuan.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.bt_chongfupailiemaizhijisuan.Image = ((System.Drawing.Image)(resources.GetObject("bt_chongfupailiemaizhijisuan.Image")));
+            this.bt_chongfupailiemaizhijisuan.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.bt_chongfupailiemaizhijisuan.Location = new System.Drawing.Point(536, 3);
+            this.bt_chongfupailiemaizhijisuan.Name = "bt_chongfupailiemaizhijisuan";
+            this.bt_chongfupailiemaizhijisuan.Size = new System.Drawing.Size(60, 60);
+            this.bt_chongfupailiemaizhijisuan.TabIndex = 14;
+            this.bt_chongfupailiemaizhijisuan.Click += new System.EventHandler(this.bt_chongfupailiemaizhijisuan_Click);
             // 
             // labelControl6
             // 
@@ -354,7 +355,7 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "三维地震勘探施工组织管理系统";
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
@@ -391,7 +392,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.SimpleButton bt_cala;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.SimpleButton bt_chongfupailiemaizhijisuan;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private working.NepCalaTable nepCalaTable1;
     }

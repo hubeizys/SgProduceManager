@@ -315,7 +315,7 @@
             this.repositoryItemTextEdit3.Name = "repositoryItemTextEdit3";
             // 
             // jieshou_xianju
-            // 
+            //  
             resources.ApplyResources(this.jieshou_xianju, "jieshou_xianju");
             this.jieshou_xianju.Edit = this.repositoryItemTextEdit4;
             this.jieshou_xianju.Id = 12;

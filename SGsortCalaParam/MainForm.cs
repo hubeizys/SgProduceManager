@@ -17,5 +17,10 @@ namespace SGsortCalaParam
         {
             InitializeComponent();
         }
+
+        private void bt_chongfupailiemaizhijisuan_Click(object sender, EventArgs e)
+        {
+            //xtraTabControl1.SelectedTabPage.Controls.Find()
+        }
     }
 }
