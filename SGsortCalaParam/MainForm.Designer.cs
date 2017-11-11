@@ -44,7 +44,7 @@
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.bt_chongfupailiemaizhijisuan = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
+            this.bt_zhuangbei_touru = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.sb_rename = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
@@ -132,7 +132,7 @@
             this.panel1.Controls.Add(this.labelControl8);
             this.panel1.Controls.Add(this.bt_chongfupailiemaizhijisuan);
             this.panel1.Controls.Add(this.labelControl6);
-            this.panel1.Controls.Add(this.simpleButton6);
+            this.panel1.Controls.Add(this.bt_zhuangbei_touru);
             this.panel1.Controls.Add(this.labelControl5);
             this.panel1.Controls.Add(this.sb_rename);
             this.panel1.Controls.Add(this.labelControl4);
@@ -234,15 +234,16 @@
             this.labelControl6.TabIndex = 11;
             this.labelControl6.Text = "装备投入、采集效率极值推算";
             // 
-            // simpleButton6
+            // bt_zhuangbei_touru
             // 
-            this.simpleButton6.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.simpleButton6.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.Image")));
-            this.simpleButton6.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton6.Location = new System.Drawing.Point(363, 3);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(135, 60);
-            this.simpleButton6.TabIndex = 10;
+            this.bt_zhuangbei_touru.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.bt_zhuangbei_touru.Image = ((System.Drawing.Image)(resources.GetObject("bt_zhuangbei_touru.Image")));
+            this.bt_zhuangbei_touru.ImageLocation = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.bt_zhuangbei_touru.Location = new System.Drawing.Point(363, 3);
+            this.bt_zhuangbei_touru.Name = "bt_zhuangbei_touru";
+            this.bt_zhuangbei_touru.Size = new System.Drawing.Size(135, 60);
+            this.bt_zhuangbei_touru.TabIndex = 10;
+            this.bt_zhuangbei_touru.Click += new System.EventHandler(this.bt_zhuangbei_touru_Click);
             // 
             // labelControl5
             // 
@@ -393,7 +394,7 @@
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.SimpleButton bt_cala;
         private DevExpress.XtraEditors.SimpleButton bt_chongfupailiemaizhijisuan;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
+        private DevExpress.XtraEditors.SimpleButton bt_zhuangbei_touru;
         private working.NepCalaTable nepCalaTable1;
     }
 }

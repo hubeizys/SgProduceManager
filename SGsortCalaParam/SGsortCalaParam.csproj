@@ -108,11 +108,23 @@
     <Compile Include="tubiao\tubiao3.Designer.cs">
       <DependentUpon>tubiao3.cs</DependentUpon>
     </Compile>
+    <Compile Include="working\CCForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="working\CCForm.Designer.cs">
+      <DependentUpon>CCForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="working\NepCalaTable.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="working\NepCalaTable.Designer.cs">
       <DependentUpon>NepCalaTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="working\shunpaoxian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="working\shunpaoxian.Designer.cs">
+      <DependentUpon>shunpaoxian.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -149,8 +161,14 @@
     <EmbeddedResource Include="tubiao\tubiao3.resx">
       <DependentUpon>tubiao3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="working\CCForm.resx">
+      <DependentUpon>CCForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="working\NepCalaTable.resx">
       <DependentUpon>NepCalaTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="working\shunpaoxian.resx">
+      <DependentUpon>shunpaoxian.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">
