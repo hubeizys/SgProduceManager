@@ -67,7 +67,7 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.xtraTabControl1, 0, 2);
@@ -122,7 +122,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.panel1.Controls.Add(this.labelControl11);
             this.panel1.Controls.Add(this.simpleButton2);
             this.panel1.Controls.Add(this.labelControl10);
@@ -163,7 +163,7 @@
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.simpleButton2.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.simpleButton2.Appearance.Options.UseBackColor = true;
             this.simpleButton2.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton2.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.Image")));
@@ -185,7 +185,7 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.simpleButton1.Appearance.Options.UseBackColor = true;
             this.simpleButton1.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.simpleButton1.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.Image")));
@@ -207,7 +207,7 @@
             // 
             // bt_cala
             // 
-            this.bt_cala.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.bt_cala.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.bt_cala.Appearance.Options.UseBackColor = true;
             this.bt_cala.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.bt_cala.Image = ((System.Drawing.Image)(resources.GetObject("bt_cala.Image")));
@@ -229,7 +229,7 @@
             // 
             // bt_chongfupailiemaizhijisuan
             // 
-            this.bt_chongfupailiemaizhijisuan.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.bt_chongfupailiemaizhijisuan.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.bt_chongfupailiemaizhijisuan.Appearance.Options.UseBackColor = true;
             this.bt_chongfupailiemaizhijisuan.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.bt_chongfupailiemaizhijisuan.Image = ((System.Drawing.Image)(resources.GetObject("bt_chongfupailiemaizhijisuan.Image")));
@@ -256,7 +256,7 @@
             // 
             // bt_zhuangbei_touru
             // 
-            this.bt_zhuangbei_touru.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.bt_zhuangbei_touru.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.bt_zhuangbei_touru.Appearance.Options.UseBackColor = true;
             this.bt_zhuangbei_touru.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.bt_zhuangbei_touru.Image = ((System.Drawing.Image)(resources.GetObject("bt_zhuangbei_touru.Image")));
@@ -279,7 +279,7 @@
             // 
             // sb_rename
             // 
-            this.sb_rename.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.sb_rename.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.sb_rename.Appearance.Options.UseBackColor = true;
             this.sb_rename.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.sb_rename.Image = ((System.Drawing.Image)(resources.GetObject("sb_rename.Image")));
@@ -302,7 +302,7 @@
             // 
             // sb_import
             // 
-            this.sb_import.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.sb_import.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.sb_import.Appearance.Options.UseBackColor = true;
             this.sb_import.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.sb_import.Image = ((System.Drawing.Image)(resources.GetObject("sb_import.Image")));
@@ -324,7 +324,7 @@
             // 
             // sb_extend
             // 
-            this.sb_extend.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.sb_extend.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.sb_extend.Appearance.Options.UseBackColor = true;
             this.sb_extend.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.sb_extend.Image = ((System.Drawing.Image)(resources.GetObject("sb_extend.Image")));
@@ -346,7 +346,7 @@
             // 
             // sb_save
             // 
-            this.sb_save.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.sb_save.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.sb_save.Appearance.Options.UseBackColor = true;
             this.sb_save.ButtonStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.sb_save.Image = ((System.Drawing.Image)(resources.GetObject("sb_save.Image")));
@@ -368,7 +368,7 @@
             // 
             // sb_newwork
             // 
-            this.sb_newwork.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.sb_newwork.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.sb_newwork.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(176)))), ((int)(((byte)(240)))));
             this.sb_newwork.Appearance.Options.UseBackColor = true;
             this.sb_newwork.Appearance.Options.UseForeColor = true;
@@ -383,7 +383,7 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 220F));
@@ -405,12 +405,14 @@
             this.textEdit1.Enabled = false;
             this.textEdit1.Location = new System.Drawing.Point(392, 3);
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            this.textEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(159)))), ((int)(((byte)(233)))));
+            this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEdit1.Properties.Appearance.ForeColor = System.Drawing.Color.White;
             this.textEdit1.Properties.Appearance.Options.UseBackColor = true;
+            this.textEdit1.Properties.Appearance.Options.UseFont = true;
             this.textEdit1.Properties.Appearance.Options.UseForeColor = true;
             this.textEdit1.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.textEdit1.Size = new System.Drawing.Size(214, 18);
+            this.textEdit1.Size = new System.Drawing.Size(214, 24);
             this.textEdit1.TabIndex = 3;
             this.textEdit1.Click += new System.EventHandler(this.textEdit1_Click);
             this.textEdit1.DoubleClick += new System.EventHandler(this.textEdit1_DoubleClick);

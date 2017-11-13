@@ -11,23 +11,19 @@ namespace SGsortCalaParam.working
 {
     public partial class shunpaoxian : Form
     {
-
         private int SJjieshouxianshu { set; get; }
         private int BSjieshouxianshu { set; get; }
         private int BSpailiedaoshu { set; get; }
         private int BSpailiefeidaoshu { set; get; }
+        private int GDcishu1 { set; get; }
         private int GDcishu { set; get; }
         private int SJdanxianjieshoudaoshu { set; get; }
-  
-
-
         public shunpaoxian()
         {
             InitializeComponent();
 
         }
-        public int Get重复使用但不搬埋排列()
-       
+        public int Get重复使用但不搬埋排列()  
         {
             try
             {
@@ -56,7 +52,7 @@ namespace SGsortCalaParam.working
             {
                 /*
                  （（布设排列标准模板单线接收道数* 滚动次数+布设排列非标准模板【无附加段】单线接收道数* 滚动次数）-设计单线接收道数）*（设计接收线数 -（布设接收线数 * 2 - 设计接收线数）*/
-                int i_ret = ((this.BSpailiedaoshu * this.GDcishu + BSpailiefeidaoshu * GDcishu) - SJdanxianjieshoudaoshu) * (SJjieshouxianshu- (BSjieshouxianshu * 2 - SJjieshouxianshu));
+                int i_ret = ((this.BSpailiedaoshu * this.GDcishu1 + BSpailiefeidaoshu * GDcishu) - SJdanxianjieshoudaoshu) * (SJjieshouxianshu- (BSjieshouxianshu * 2 - SJjieshouxianshu));
                 this.chongfu_banmaipailie.Text = i_ret.ToString();
                 return i_ret;
             }
@@ -75,7 +71,7 @@ namespace SGsortCalaParam.working
                  * （（布设排列标准模板单线接收道数*滚动次数+布设排列非标准模板【无附加段】单线接收道数*滚动次数）-设计单线接收道数）*设计接收线数
                  */
 
-                int i_ret = ((this.BSpailiedaoshu * this.GDcishu + this.BSpailiefeidaoshu * GDcishu) - SJdanxianjieshoudaoshu) * this.SJjieshouxianshu;
+                int i_ret = ((this.BSpailiedaoshu * this.GDcishu1 + this.BSpailiefeidaoshu * GDcishu) - SJdanxianjieshoudaoshu) * this.SJjieshouxianshu;
                 this.chongfu_banmaipailie.Text = i_ret.ToString();
                 return i_ret;
             }
@@ -179,15 +175,17 @@ namespace SGsortCalaParam.working
             {
                 Get重复搬埋排列Big();
                 chongfu_shiyongbupanmaipailie.Visible = false;
+                lb_cf.Visible = false;
+                label1.Visible = false;
             }
             else
             {
                 chongfu_shiyongbupanmaipailie.Visible = true;
+                lb_cf.Visible = true;
+                label1.Visible = true;
                 Get重复搬埋排列Lite();
                 Get重复使用但不搬埋排列();
             }
-           
-
         }
 
         private void sheji_danxianjieshoudaoshu_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -199,7 +197,19 @@ namespace SGsortCalaParam.working
                 e.Cancel = true;
             }
             this.SJdanxianjieshoudaoshu = ret;
+            sheTest();
+        }
 
+        private void gundong_cishu1_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            int ret = 0;
+            if (gundong_cishu1.Text == "" || !int.TryParse(gundong_cishu1.Text, out ret))
+            {
+                MessageBox.Show("设计单线接收道数不是正常的数值");
+                e.Cancel = true;
+            }
+            this.GDcishu1 = ret;
+            sheTest();
         }
     }
 }
