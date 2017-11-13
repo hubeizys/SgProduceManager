@@ -257,6 +257,8 @@
             // zonghengbi
             // 
             this.zonghengbi.Caption = "纵横比";
+            this.zonghengbi.DisplayFormat.FormatString = "N2";
+            this.zonghengbi.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.zonghengbi.FieldName = "zonghengbi";
             this.zonghengbi.Name = "zonghengbi";
             this.zonghengbi.OptionsColumn.AllowEdit = false;
@@ -268,8 +270,11 @@
             // paodaobi
             // 
             this.paodaobi.Caption = "炮道比";
+            this.paodaobi.DisplayFormat.FormatString = "N2";
+            this.paodaobi.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.paodaobi.FieldName = "paodaobi";
             this.paodaobi.Name = "paodaobi";
+            this.paodaobi.UnboundType = DevExpress.Data.UnboundColumnType.String;
             this.paodaobi.Visible = true;
             this.paodaobi.VisibleIndex = 9;
             // 
@@ -586,7 +591,7 @@
             this.labelControl15.Location = new System.Drawing.Point(0, 14);
             this.labelControl15.Margin = new System.Windows.Forms.Padding(3, 3, 12, 3);
             this.labelControl15.Name = "labelControl15";
-            this.labelControl15.Size = new System.Drawing.Size(106, 18);
+            this.labelControl15.Size = new System.Drawing.Size(108, 18);
             this.labelControl15.TabIndex = 38;
             this.labelControl15.Text = "布设接收线数";
             // 

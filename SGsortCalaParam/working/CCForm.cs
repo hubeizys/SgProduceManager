@@ -87,7 +87,7 @@ namespace SGsortCalaParam.working
                 DeltaX = 1; 
             }
             this.XmaxX2CDeltaX = Xmax * 2 / DeltaX;
-            MessageBox.Show("XmaxX2CDeltaX : " + XmaxX2CDeltaX);
+            //MessageBox.Show("XmaxX2CDeltaX : " + XmaxX2CDeltaX);
             return XmaxX2CDeltaX;
         }
 
@@ -117,8 +117,9 @@ namespace SGsortCalaParam.working
                     SliCDeltaX = 1;
                 }
                 double _l_m_value = 0;
+                Console.WriteLine("aaaaa" + Convert.ToDouble(p_EValue) / (Rvalue + n_num));
                 // （E 值 / （增加 接收线数【N】 + 接收线数【R】）  - （2 * 纵向最大偏移距 【Xmax】） ）/ (炮线距/道距) 
-                _l_m_value = Convert.ToDouble(p_EValue / (Rvalue + n_num) - this.XmaxX2CDeltaX) / SliCDeltaX;
+                _l_m_value = (Convert.ToDouble(p_EValue) / (Rvalue + n_num) - this.XmaxX2CDeltaX) / SliCDeltaX;
                 Console.WriteLine(string.Format("m值为： == {0}", _l_m_value));
                 return _l_m_value;
             }
@@ -146,7 +147,7 @@ namespace SGsortCalaParam.working
                 {
                     ShotsCell = 1;
                 }
-                int _l_mvalue = Convert.ToInt32( p_SValue) / ShotsCell / (n_num + 1) - 1;
+                double _l_mvalue = Convert.ToDouble( p_SValue) / ShotsCell / (n_num + 1) - 1;
                 Console.WriteLine(string.Format("m值为： == {0}", _l_mvalue));
                 return _l_mvalue;
             }
@@ -163,7 +164,7 @@ namespace SGsortCalaParam.working
             {
                 double _l_mvalue = GetM值ByS(SValue, p_num);
                 double _l_evalue = (this.XmaxX2CDeltaX + SliCDeltaX * _l_mvalue) * (p_num + Rvalue);
-                return _l_mvalue;
+                return _l_evalue;
             }
             catch (Exception err)
             {
@@ -174,14 +175,7 @@ namespace SGsortCalaParam.working
 
         private void te_zonghe1_EditValueChanged(object sender, EventArgs e)
         {
-            int r_ret = 0;
-            if (!Int32.TryParse(te_zonghe1.Text, out r_ret))
-            {
-                //e.Cancel = true;
-                // MessageBox.Show("请输入数字");
 
-            }
-            te_zonghe1.Text = "0";
         }
 
         private void te_xmax_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -233,6 +227,7 @@ namespace SGsortCalaParam.working
             Int32 _l_cli = GetSli();
             this.te_zonghe2.Invoke(new Action(()=> {
                 this.te_zonghe2.Text = GetSliCDeltaX(_l_cli, r_ret).ToString();
+                this.te_zonghe2.Refresh();
             }));
         }
 
@@ -343,21 +338,26 @@ namespace SGsortCalaParam.working
                 //Console.WriteLine("没有指定增加接收线数（N）");
                 //return;
             }
-
             this.chartControl1.Series[0].Points.Clear();
-
+            this.chartControl2.Series[0].Points.Clear();
             //投入采集道数（E）
             for (int i = 0; i < n_num; i++)
             {
                  double s_value =  this.GetS值(i);
                 this.chartControl1.Series[0].Points.Add(new DevExpress.XtraCharts.SeriesPoint(i, s_value));
+
+                double e_value = this.GetE值(i);
+                this.chartControl2.Series[0].Points.Add(new DevExpress.XtraCharts.SeriesPoint(i, e_value));
             }
 
         }
 
+
+
         private void CCForm_Load(object sender, EventArgs e)
         {
             this.testSeries();
+            this.te_caijipaoci.Enabled = false;
         }
 
         private void te_zonghe1_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -377,10 +377,36 @@ namespace SGsortCalaParam.working
             int r_ret = 0;
             if (!Int32.TryParse(te_zonghe2.Text, out r_ret))
             {
-                e.Cancel = true;
+                //e.Cancel = true;
                 //  MessageBox.Show("请输入数字");
             }
             SliCDeltaX = r_ret;
+            GetAllpoints();
+        }
+
+        private void tabPane1_SelectedPageChanged(object sender, DevExpress.XtraBars.Navigation.SelectedPageChangedEventArgs e)
+        {
+            // MessageBox.Show(this.tabPane1.SelectedPageIndex.ToString());
+            if (this.tabPane1.SelectedPageIndex == 1)
+            {
+                this.te_caijipaoci.Enabled = true;
+                this.te_Enum.Enabled = false;
+            } else
+            {
+                this.te_caijipaoci.Enabled = false;
+                this.te_Enum.Enabled = true;
+            }
+        }
+
+        private void te_caijipaoci_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
+        {
+            int r_ret = 0;
+            if (!Int32.TryParse(te_caijipaoci.Text, out r_ret))
+            {
+                //e.Cancel = true;
+                //  MessageBox.Show("请输入数字");
+            }
+            SValue = r_ret;
             GetAllpoints();
         }
     }

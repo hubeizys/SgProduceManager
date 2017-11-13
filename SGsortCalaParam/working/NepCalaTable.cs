@@ -271,7 +271,26 @@ namespace SGsortCalaParam.working
         /// <param name="e"></param>
         private void barButtonItem1_ItemClick_1(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            int i = this.gridView1.FocusedRowHandle;
+            if (i < 0)
+            {
+                return;
+            }
+            // MessageBox.Show("asdasdasdasd :" +  i);
+            DataTable dt =  this.DDT;
 
+            DataRow dr = dt.NewRow();
+            foreach (DataColumn dc in dr.Table.Columns)
+            {
+                if (dr[dc.ColumnName].GetType() == typeof(int))
+                { dr[dc.ColumnName] = 0; }
+                else
+                {
+                    dr[dc.ColumnName] = 0;
+                }
+            }
+
+            dt.Rows.InsertAt(dr, i);
         }
 
         private void gridControl1_MouseUp(object sender, MouseEventArgs e)
@@ -501,32 +520,40 @@ namespace SGsortCalaParam.working
 
 
         #region 炮道比 = （18 ）采集炮次 / （16） 布设排列总道数
-        private double Get炮道比(Int32 p_caijipaoci, Int32 p_bushe_pailiezongdaosuh)
+        private string Get炮道比(Int32 p_caijipaoci, Int32 p_bushe_pailiezongdaosuh)
         {
             Console.WriteLine("采集炮次 == "  + p_caijipaoci + " == " + p_bushe_pailiezongdaosuh);
             if (p_bushe_pailiezongdaosuh <= 0)
             {
                 MessageBox.Show("布设排列总道数有错误");
-                return -1;
+                return "-1";
             }
-            return (double)p_caijipaoci / (double)p_bushe_pailiezongdaosuh;
+            string str1 = String.Format("{0:N2}", (double)p_caijipaoci / (double)p_bushe_pailiezongdaosuh);
+            // MessageBox.Show(str1);
+            //MessageBox.Show(((float)((double)p_caijipaoci / (double)p_bushe_pailiezongdaosuh)).ToString() );
+            Console.WriteLine("str 1 ;  " +  str1);
+            return str1;
+            //return Math.Round( (double)p_caijipaoci / (double)p_bushe_pailiezongdaosuh, 2);
         }
         #endregion
 
         #region （22）纵横比 =纵/横（保留小数点后 2 位）
 
-        private double Get纵横比(int p_zong, int p_heng)
+        private string Get纵横比(int p_zong, int p_heng)
         {
             double r_zhonghengbi = 0;
+            string sr_zhonghengbi = "1.00";
             try
             {
                 r_zhonghengbi = (double)p_zong / (double)p_heng;
+                // r_zhonghengbi = Math.Round(r_zhonghengbi, 2);
+                sr_zhonghengbi =  string.Format("{0:00.00}", r_zhonghengbi);
             }
             catch (Exception err)
             {
                 MessageBox.Show(string.Format("【纵横比】出现异常 : {0}", err));
             }
-            return r_zhonghengbi;
+            return sr_zhonghengbi;
         }
 
         #endregion
@@ -685,7 +712,27 @@ namespace SGsortCalaParam.working
         /// <param name="e"></param>
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+            int i = this.gridView1.FocusedRowHandle;
+            if (i < 0)
+            {
+                return;
+            }
+            // MessageBox.Show("asdasdasdasd :" +  i);
+            DataTable dt = this.DDT;
 
+            /*
+            DataRow dr = dt.NewRow();
+            foreach (DataColumn dc in dr.Table.Columns)
+            {
+                if (dr[dc.ColumnName].GetType() == typeof(int))
+                { dr[dc.ColumnName] = 0; }
+                else
+                {
+                    dr[dc.ColumnName] = 0;
+                }
+            }
+            */
+            dt.Rows.RemoveAt( i);
         }
 
         private void gridControl1_TextChanged(object sender, EventArgs e)

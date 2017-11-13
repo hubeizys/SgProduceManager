@@ -230,7 +230,7 @@
             this.barButtonItem9,
             this.barButtonItem10});
             resources.ApplyResources(this.ribbonControl1, "ribbonControl1");
-            this.ribbonControl1.MaxItemId = 37;
+            this.ribbonControl1.MaxItemId = 38;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -315,7 +315,7 @@
             this.repositoryItemTextEdit3.Name = "repositoryItemTextEdit3";
             // 
             // jieshou_xianju
-            //  
+            // 
             resources.ApplyResources(this.jieshou_xianju, "jieshou_xianju");
             this.jieshou_xianju.Edit = this.repositoryItemTextEdit4;
             this.jieshou_xianju.Id = 12;

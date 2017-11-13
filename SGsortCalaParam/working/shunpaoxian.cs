@@ -26,7 +26,8 @@ namespace SGsortCalaParam.working
             InitializeComponent();
 
         }
-        public int Get重复搬埋排列Lite()
+        public int Get重复使用但不搬埋排列()
+       
         {
             try
             {
@@ -49,7 +50,7 @@ namespace SGsortCalaParam.working
             return 0;
         }
 
-        public int Get重复使用但不搬埋排列()
+        public int Get重复搬埋排列Lite()
         {
             try
             {
@@ -113,9 +114,11 @@ namespace SGsortCalaParam.working
                 e.Cancel = true;
             }
             this.SJjieshouxianshu = ret;
+            /*
             Get重复搬埋排列Lite();
             Get重复使用但不搬埋排列();
-            Get重复搬埋排列Big();
+            Get重复搬埋排列Big();*/
+            sheTest();
         }
 
         private void bushe_jieshouxianshu_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -127,9 +130,7 @@ namespace SGsortCalaParam.working
                 e.Cancel = true;
             }
             this.BSjieshouxianshu = ret;
-            Get重复搬埋排列Lite();
-            Get重复使用但不搬埋排列();
-            Get重复搬埋排列Big();
+            sheTest();
         }
 
         private void bushe_pailie_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -141,9 +142,7 @@ namespace SGsortCalaParam.working
                 e.Cancel = true;
             }
             this.BSpailiedaoshu = ret;
-            Get重复搬埋排列Lite();
-            Get重复使用但不搬埋排列();
-            Get重复搬埋排列Big();
+            sheTest();
         }
 
         private void bushe_pailiefei_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -155,9 +154,7 @@ namespace SGsortCalaParam.working
                 e.Cancel = true;
             }
             this.BSpailiefeidaoshu = ret;
-            Get重复搬埋排列Lite();
-            Get重复使用但不搬埋排列();
-            Get重复搬埋排列Big();
+            sheTest();
         }
 
         private void gundong_cishu_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -169,9 +166,28 @@ namespace SGsortCalaParam.working
                 e.Cancel = true;
             }
             this.GDcishu = ret;
-            Get重复搬埋排列Lite();
-            Get重复使用但不搬埋排列();
-            Get重复搬埋排列Big();
+            sheTest();
+        }
+
+        private void sheTest()
+        {
+            if (BSjieshouxianshu == 0)
+            {
+                BSjieshouxianshu = 1;
+            }
+            if (SJjieshouxianshu/BSjieshouxianshu >= 2)
+            {
+                Get重复搬埋排列Big();
+                chongfu_shiyongbupanmaipailie.Visible = false;
+            }
+            else
+            {
+                chongfu_shiyongbupanmaipailie.Visible = true;
+                Get重复搬埋排列Lite();
+                Get重复使用但不搬埋排列();
+            }
+           
+
         }
 
         private void sheji_danxianjieshoudaoshu_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -183,9 +199,7 @@ namespace SGsortCalaParam.working
                 e.Cancel = true;
             }
             this.SJdanxianjieshoudaoshu = ret;
-            Get重复搬埋排列Lite();
-            Get重复使用但不搬埋排列();
-            Get重复搬埋排列Big();
+
         }
     }
 }
