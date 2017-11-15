@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.tpl_main = new System.Windows.Forms.TableLayoutPanel();
+            this.gundong_cishu1 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
@@ -44,18 +46,17 @@
             this.sheji_danxianjieshoudaoshu = new DevExpress.XtraEditors.TextEdit();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
             this.panel_result = new System.Windows.Forms.Panel();
-            this.chongfu_shiyongbupanmaipailie = new DevExpress.XtraEditors.LabelControl();
-            this.chongfu_banmaipailie = new DevExpress.XtraEditors.LabelControl();
-            this.lb_cf = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.gundong_cishu1 = new DevExpress.XtraEditors.TextEdit();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lb_cf = new DevExpress.XtraEditors.LabelControl();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.chongfu_banmaipailie = new DevExpress.XtraEditors.LabelControl();
+            this.label2 = new System.Windows.Forms.Label();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.chongfu_shiyongbupanmaipailie = new DevExpress.XtraEditors.LabelControl();
+            this.label1 = new System.Windows.Forms.Label();
             this.tpl_main.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gundong_cishu1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sheji_jieshouxianshu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bushe_jieshouxianshu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bushe_pailie.Properties)).BeginInit();
@@ -64,10 +65,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.sheji_danxianjieshoudaoshu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
             this.panel_result.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gundong_cishu1.Properties)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tpl_main
@@ -113,6 +113,30 @@
             this.tpl_main.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tpl_main.Size = new System.Drawing.Size(811, 563);
             this.tpl_main.TabIndex = 0;
+            // 
+            // gundong_cishu1
+            // 
+            this.gundong_cishu1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gundong_cishu1.Location = new System.Drawing.Point(323, 133);
+            this.gundong_cishu1.Name = "gundong_cishu1";
+            this.gundong_cishu1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gundong_cishu1.Properties.Appearance.Options.UseFont = true;
+            this.gundong_cishu1.Size = new System.Drawing.Size(244, 26);
+            this.gundong_cishu1.TabIndex = 16;
+            this.gundong_cishu1.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.gundong_cishu1_EditValueChanging);
+            // 
+            // labelControl9
+            // 
+            this.labelControl9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.labelControl9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.labelControl9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelControl9.Location = new System.Drawing.Point(43, 133);
+            this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 3, 14, 3);
+            this.labelControl9.Name = "labelControl9";
+            this.labelControl9.Size = new System.Drawing.Size(263, 24);
+            this.labelControl9.TabIndex = 15;
+            this.labelControl9.Text = "滚动次数";
             // 
             // labelControl7
             // 
@@ -291,112 +315,6 @@
             this.panel_result.Size = new System.Drawing.Size(724, 257);
             this.panel_result.TabIndex = 14;
             // 
-            // chongfu_shiyongbupanmaipailie
-            // 
-            this.chongfu_shiyongbupanmaipailie.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chongfu_shiyongbupanmaipailie.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.chongfu_shiyongbupanmaipailie.Location = new System.Drawing.Point(3, 3);
-            this.chongfu_shiyongbupanmaipailie.Name = "chongfu_shiyongbupanmaipailie";
-            this.chongfu_shiyongbupanmaipailie.Size = new System.Drawing.Size(81, 39);
-            this.chongfu_shiyongbupanmaipailie.TabIndex = 3;
-            this.chongfu_shiyongbupanmaipailie.Text = "defult";
-            // 
-            // chongfu_banmaipailie
-            // 
-            this.chongfu_banmaipailie.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chongfu_banmaipailie.Appearance.ForeColor = System.Drawing.Color.Red;
-            this.chongfu_banmaipailie.Location = new System.Drawing.Point(3, 3);
-            this.chongfu_banmaipailie.Name = "chongfu_banmaipailie";
-            this.chongfu_banmaipailie.Size = new System.Drawing.Size(98, 39);
-            this.chongfu_banmaipailie.TabIndex = 2;
-            this.chongfu_banmaipailie.Text = "default";
-            // 
-            // lb_cf
-            // 
-            this.lb_cf.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_cf.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.lb_cf.Location = new System.Drawing.Point(22, 20);
-            this.lb_cf.Name = "lb_cf";
-            this.lb_cf.Size = new System.Drawing.Size(320, 39);
-            this.lb_cf.TabIndex = 1;
-            this.lb_cf.Text = "重复使用但不搬埋排列";
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.labelControl8.Location = new System.Drawing.Point(22, 115);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(192, 39);
-            this.labelControl8.TabIndex = 0;
-            this.labelControl8.Text = "重复搬埋排列";
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.labelControl9.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.labelControl9.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelControl9.Location = new System.Drawing.Point(43, 133);
-            this.labelControl9.Margin = new System.Windows.Forms.Padding(3, 3, 14, 3);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(263, 24);
-            this.labelControl9.TabIndex = 15;
-            this.labelControl9.Text = "滚动次数";
-            // 
-            // gundong_cishu1
-            // 
-            this.gundong_cishu1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gundong_cishu1.Location = new System.Drawing.Point(323, 133);
-            this.gundong_cishu1.Name = "gundong_cishu1";
-            this.gundong_cishu1.Properties.Appearance.Font = new System.Drawing.Font("Microsoft YaHei Light", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.gundong_cishu1.Properties.Appearance.Options.UseFont = true;
-            this.gundong_cishu1.Size = new System.Drawing.Size(244, 26);
-            this.gundong_cishu1.TabIndex = 16;
-            this.gundong_cishu1.EditValueChanging += new DevExpress.XtraEditors.Controls.ChangingEventHandler(this.gundong_cishu1_EditValueChanging);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.chongfu_shiyongbupanmaipailie);
-            this.flowLayoutPanel1.Controls.Add(this.label1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(22, 65);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(192, 48);
-            this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(90, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 45);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "道";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.Controls.Add(this.chongfu_banmaipailie);
-            this.flowLayoutPanel2.Controls.Add(this.label2);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(22, 160);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 48);
-            this.flowLayoutPanel2.TabIndex = 5;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("SimSun", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(107, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 45);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "道";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lb_cf);
@@ -410,6 +328,88 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "计算结果";
             // 
+            // lb_cf
+            // 
+            this.lb_cf.Appearance.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.lb_cf.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.lb_cf.Location = new System.Drawing.Point(80, 20);
+            this.lb_cf.Name = "lb_cf";
+            this.lb_cf.Size = new System.Drawing.Size(242, 27);
+            this.lb_cf.TabIndex = 1;
+            this.lb_cf.Text = "重复使用排列（不搬埋）";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.chongfu_banmaipailie);
+            this.flowLayoutPanel2.Controls.Add(this.label2);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(161, 159);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 31);
+            this.flowLayoutPanel2.TabIndex = 5;
+            // 
+            // chongfu_banmaipailie
+            // 
+            this.chongfu_banmaipailie.Appearance.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.chongfu_banmaipailie.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.chongfu_banmaipailie.Location = new System.Drawing.Point(3, 3);
+            this.chongfu_banmaipailie.Name = "chongfu_banmaipailie";
+            this.chongfu_banmaipailie.Size = new System.Drawing.Size(65, 25);
+            this.chongfu_banmaipailie.TabIndex = 2;
+            this.chongfu_banmaipailie.Text = "default";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("SimSun", 16F);
+            this.label2.Location = new System.Drawing.Point(74, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(32, 31);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "道";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.labelControl8.Appearance.ForeColor = System.Drawing.Color.Blue;
+            this.labelControl8.Location = new System.Drawing.Point(135, 114);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(132, 27);
+            this.labelControl8.TabIndex = 0;
+            this.labelControl8.Text = "重复搬埋排列";
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.chongfu_shiyongbupanmaipailie);
+            this.flowLayoutPanel1.Controls.Add(this.label1);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(165, 65);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(192, 31);
+            this.flowLayoutPanel1.TabIndex = 4;
+            // 
+            // chongfu_shiyongbupanmaipailie
+            // 
+            this.chongfu_shiyongbupanmaipailie.Appearance.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.chongfu_shiyongbupanmaipailie.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.chongfu_shiyongbupanmaipailie.Location = new System.Drawing.Point(3, 3);
+            this.chongfu_shiyongbupanmaipailie.Name = "chongfu_shiyongbupanmaipailie";
+            this.chongfu_shiyongbupanmaipailie.Size = new System.Drawing.Size(54, 25);
+            this.chongfu_shiyongbupanmaipailie.TabIndex = 3;
+            this.chongfu_shiyongbupanmaipailie.Text = "defult";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("SimSun", 16F);
+            this.label1.Location = new System.Drawing.Point(63, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(32, 31);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "道";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // shunpaoxian
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -421,6 +421,7 @@
             this.Name = "shunpaoxian";
             this.Text = "顺炮线施工重复排列数量计算公式（适用于规则矩形）";
             this.tpl_main.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gundong_cishu1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sheji_jieshouxianshu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bushe_jieshouxianshu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bushe_pailie.Properties)).EndInit();
@@ -429,13 +430,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.sheji_danxianjieshoudaoshu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
             this.panel_result.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gundong_cishu1.Properties)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
-            this.flowLayoutPanel2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel2.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

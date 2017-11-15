@@ -220,15 +220,17 @@ namespace SGsortCalaParam.working
             // Int32 DeltaX = this.GetDeltaX();
             Int32 _l_xmax = GetXmax();
             this.te_zonghe1.Invoke(new Action(() => {
-                this.te_zonghe1.Text = GetXmaxX2CDeltaX(_l_xmax, r_ret).ToString();
+                this.te_zonghe1.Text = Convert.ToString( GetXmaxX2CDeltaX(_l_xmax, r_ret));
                 this.te_zonghe1.Refresh();
             }));
 
             Int32 _l_cli = GetSli();
-            this.te_zonghe2.Invoke(new Action(()=> {
+            /*  this.te_zonghe2.Invoke(new Action(()=> {
                 this.te_zonghe2.Text = GetSliCDeltaX(_l_cli, r_ret).ToString();
                 this.te_zonghe2.Refresh();
-            }));
+            }));*/
+            SliCDeltaX = GetSliCDeltaX(_l_cli, r_ret);
+            GetAllpoints();
         }
 
         private void te_daoju_EditValueChanged(object sender, EventArgs e)
@@ -248,12 +250,15 @@ namespace SGsortCalaParam.working
                 MessageBox.Show("请输入数字");
             }
 
-           int deltaX=   GetDeltaX();
+           int deltaX= GetDeltaX();
 
+            /*
             this.te_zonghe2.Invoke(new Action(()=> {
                 this.te_zonghe2.Text = GetSliCDeltaX(r_ret, deltaX).ToString();
             }));
-
+            */
+            SliCDeltaX = GetSliCDeltaX(r_ret, deltaX);
+            GetAllpoints();
         }
 
         private void te_nnum_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -262,7 +267,8 @@ namespace SGsortCalaParam.working
             if (!Int32.TryParse(te_nnum.Text, out r_ret))
             {
                 e.Cancel = true;
-                MessageBox.Show("请输入数字");
+                //MessageBox.Show("请输入数字");
+                Console.WriteLine(string.Format("请输入数字"));
             }
 
             if (r_ret <=0)
@@ -274,10 +280,6 @@ namespace SGsortCalaParam.working
             GetAllpoints();
         }
 
-        private void te_Rnum_EditValueChanged(object sender, EventArgs e)
-        {
-         
-        }
 
         private void te_Rnum_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
         {
@@ -285,7 +287,7 @@ namespace SGsortCalaParam.working
             if (!Int32.TryParse(te_Rnum.Text, out r_ret))
             {
                 e.Cancel = true;
-                MessageBox.Show("请输入数字");
+                //MessageBox.Show("请输入数字");
             }
             this.Rvalue = r_ret;
             GetAllpoints();
@@ -297,7 +299,7 @@ namespace SGsortCalaParam.working
             if (!Int32.TryParse(te_Enum.Text, out r_ret))
             {
                 e.Cancel = true;
-                MessageBox.Show("请输入数字");
+                //MessageBox.Show("请输入数字");
             }
             this.EValue = r_ret;
             GetAllpoints();
@@ -309,7 +311,7 @@ namespace SGsortCalaParam.working
             if (!Int32.TryParse(te_ShotsCell.Text, out r_ret))
             {
                 e.Cancel = true;
-                MessageBox.Show("请输入数字");
+                //MessageBox.Show("请输入数字");
             }
             this.ShotsCell = r_ret;
             GetAllpoints();
@@ -339,17 +341,38 @@ namespace SGsortCalaParam.working
                 //return;
             }
             this.chartControl1.Series[0].Points.Clear();
+            this.chartControl1.Series[1].Points.Clear();
             this.chartControl2.Series[0].Points.Clear();
+            this.chartControl2.Series[1].Points.Clear();
             //投入采集道数（E）
-            for (int i = 0; i < n_num; i++)
+            double max_num = 0;
+            int flags_max = 0;
+
+            double min_num =  double.MaxValue;
+            int flag_min = 0;
+            for (int i = 1; i <= n_num; i++)
             {
-                 double s_value =  this.GetS值(i);
-                this.chartControl1.Series[0].Points.Add(new DevExpress.XtraCharts.SeriesPoint(i, s_value));
+                double s_value =  this.GetS值(i);
+
+                if (s_value > max_num)
+                {
+                    flags_max = i;
+                    max_num = s_value;
+                }
+                DevExpress.XtraCharts.SeriesPoint temp_point = new DevExpress.XtraCharts.SeriesPoint(i, (int)s_value);
+                this.chartControl1.Series[0].Points.Add(temp_point);
 
                 double e_value = this.GetE值(i);
-                this.chartControl2.Series[0].Points.Add(new DevExpress.XtraCharts.SeriesPoint(i, e_value));
-            }
+                if (e_value < min_num)
+                {
+                    min_num = e_value;
+                    flag_min = i;
+                }
 
+                this.chartControl2.Series[0].Points.Add(new DevExpress.XtraCharts.SeriesPoint(i, (int)e_value));
+            }
+            this.chartControl1.Series[1].Points.Add(new DevExpress.XtraCharts.SeriesPoint(flags_max, max_num) );
+            this.chartControl2.Series[1].Points.Add(new DevExpress.XtraCharts.SeriesPoint(flag_min, min_num));
         }
 
 
@@ -357,7 +380,7 @@ namespace SGsortCalaParam.working
         private void CCForm_Load(object sender, EventArgs e)
         {
             this.testSeries();
-            this.te_caijipaoci.Enabled = false;
+            //this.te_caijipaoci.Enabled = false;
         }
 
         private void te_zonghe1_EditValueChanging(object sender, DevExpress.XtraEditors.Controls.ChangingEventArgs e)
@@ -389,12 +412,20 @@ namespace SGsortCalaParam.working
             // MessageBox.Show(this.tabPane1.SelectedPageIndex.ToString());
             if (this.tabPane1.SelectedPageIndex == 1)
             {
-                this.te_caijipaoci.Enabled = true;
-                this.te_Enum.Enabled = false;
+                this.te_caijipaoci.Visible = true;
+                this.lc_caiji.Visible = true;
+                this.te_Enum.Visible = false;
+                this.lb_daoshu.Visible = false;
+                panel2.Visible = false;
+                panel3.Visible = true;
             } else
             {
-                this.te_caijipaoci.Enabled = false;
-                this.te_Enum.Enabled = true;
+                this.te_caijipaoci.Visible = false;
+                this.lc_caiji.Visible = false;
+                this.te_Enum.Visible = true;
+                this.lb_daoshu.Visible = true;
+                panel2.Visible = true;
+                panel3.Visible = false;
             }
         }
 
@@ -409,5 +440,7 @@ namespace SGsortCalaParam.working
             SValue = r_ret;
             GetAllpoints();
         }
+
+
     }
 }
