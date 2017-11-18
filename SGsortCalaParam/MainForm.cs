@@ -101,5 +101,10 @@ namespace SGsortCalaParam
                 this.textEdit1.Enabled = true;
             }
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
