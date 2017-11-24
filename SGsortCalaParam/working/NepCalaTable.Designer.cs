@@ -206,7 +206,7 @@
             // 
             // banqian_daoshu
             // 
-            this.banqian_daoshu.Caption = "搬埋道数";
+            this.banqian_daoshu.Caption = "顺接收线方向搬家道数";
             this.banqian_daoshu.FieldName = "banqian_daoshu";
             this.banqian_daoshu.Name = "banqian_daoshu";
             this.banqian_daoshu.OptionsColumn.AllowEdit = false;
@@ -216,7 +216,7 @@
             // 
             // ke_caiji
             // 
-            this.ke_caiji.Caption = "可采集炮次";
+            this.ke_caiji.Caption = "日采集炮次";
             this.ke_caiji.FieldName = "ke_caiji";
             this.ke_caiji.Name = "ke_caiji";
             this.ke_caiji.OptionsColumn.AllowEdit = false;
@@ -226,7 +226,7 @@
             // 
             // banjia_daoshu
             // 
-            this.banjia_daoshu.Caption = "搬家道数";
+            this.banjia_daoshu.Caption = "顺炮线方向搬家道数";
             this.banjia_daoshu.FieldName = "banjia_daoshu";
             this.banjia_daoshu.Name = "banjia_daoshu";
             this.banjia_daoshu.OptionsColumn.AllowEdit = false;
@@ -750,31 +750,31 @@
         private DevExpress.XtraEditors.LabelControl labelControl4;
         private DevExpress.XtraEditors.LabelControl labelControl5;
         private DevExpress.XtraEditors.LabelControl labelControl7;
-        private DevExpress.XtraEditors.TextEdit jifa_dianju;
-        private DevExpress.XtraEditors.TextEdit jieshou_dianju;
-        private DevExpress.XtraEditors.TextEdit jieshou_dianshu;
+        public DevExpress.XtraEditors.TextEdit jifa_dianju;
+        public DevExpress.XtraEditors.TextEdit jieshou_dianju;
+        public DevExpress.XtraEditors.TextEdit jieshou_dianshu;
         private DevExpress.XtraEditors.LabelControl labelControl8;
         private DevExpress.XtraEditors.LabelControl labelControl9;
         private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.TextEdit jifa_xianju;
-        private DevExpress.XtraEditors.TextEdit jieshou_xianju;
-        private DevExpress.XtraEditors.TextEdit muban_zong;
+        public DevExpress.XtraEditors.TextEdit jifa_xianju;
+        public DevExpress.XtraEditors.TextEdit jieshou_xianju;
+        public DevExpress.XtraEditors.TextEdit muban_zong;
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.TextEdit jieshou_xianshu;
-        private DevExpress.XtraEditors.TextEdit muban_heng;
-        private DevExpress.XtraEditors.TextEdit mobanpao;
+        public DevExpress.XtraEditors.TextEdit jieshou_xianshu;
+        public DevExpress.XtraEditors.TextEdit muban_heng;
+        public DevExpress.XtraEditors.TextEdit mobanpao;
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LabelControl labelControl15;
-        private DevExpress.XtraEditors.TextEdit textEdit_jsdaoshu;
+        public DevExpress.XtraEditors.TextEdit textEdit_jsdaoshu;
         private System.Windows.Forms.Panel panel1;
-        private DevExpress.XtraEditors.TextEdit textEdit_zongdianshu;
-        private DevExpress.XtraEditors.TextEdit bushe_jieshouxianshu;
-        private DevExpress.XtraEditors.TextEdit bushe_jifaxianshu;
-        private DevExpress.XtraEditors.TextEdit textEdit_paoci;
+        public DevExpress.XtraEditors.TextEdit textEdit_zongdianshu;
+        public DevExpress.XtraEditors.TextEdit bushe_jieshouxianshu;
+        public DevExpress.XtraEditors.TextEdit bushe_jifaxianshu;
+        public DevExpress.XtraEditors.TextEdit textEdit_paoci;
         private DevExpress.XtraGrid.Columns.GridColumn paodaobi;
     }
 }

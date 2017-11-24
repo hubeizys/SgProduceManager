@@ -99,6 +99,7 @@
             this.xtraTabControl1.TabIndex = 0;
             this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
             this.xtraTabPage1});
+            this.xtraTabControl1.SelectedPageChanged += new DevExpress.XtraTab.TabPageChangedEventHandler(this.xtraTabControl1_SelectedPageChanged);
             this.xtraTabControl1.CloseButtonClick += new System.EventHandler(this.xtraTabControl1_CloseButtonClick);
             // 
             // xtraTabPage1
@@ -311,6 +312,7 @@
             this.sb_import.Name = "sb_import";
             this.sb_import.Size = new System.Drawing.Size(60, 60);
             this.sb_import.TabIndex = 6;
+            this.sb_import.Click += new System.EventHandler(this.sb_import_Click);
             // 
             // labelControl3
             // 
@@ -333,6 +335,7 @@
             this.sb_extend.Name = "sb_extend";
             this.sb_extend.Size = new System.Drawing.Size(60, 60);
             this.sb_extend.TabIndex = 4;
+            this.sb_extend.Click += new System.EventHandler(this.sb_extend_Click);
             // 
             // labelControl2
             // 
@@ -355,6 +358,7 @@
             this.sb_save.Name = "sb_save";
             this.sb_save.Size = new System.Drawing.Size(60, 60);
             this.sb_save.TabIndex = 2;
+            this.sb_save.Click += new System.EventHandler(this.sb_save_Click);
             // 
             // labelControl1
             // 

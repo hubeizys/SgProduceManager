@@ -22,8 +22,8 @@ namespace SGsortCalaParam
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("Office 2016 Colorful");
-            //Application.Run(new MainForm());
-            Application.Run(new Form1());
+            Application.Run(new LoginFrom());
+            //Application.Run(new Form1());
         }
     }
 }

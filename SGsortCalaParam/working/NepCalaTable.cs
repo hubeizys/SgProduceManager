@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraCharts;
+using DevExpress.XtraGrid;
+using DevExpress.XtraGrid.Views.Grid;
 
 namespace SGsortCalaParam.working
 {
@@ -19,9 +21,13 @@ namespace SGsortCalaParam.working
         // 我感觉我的智商受到了侮辱。 
         private DataTable dt;
         public DataTable DDT {
-            set { this.dt = value; }
+            set { this.gridControl1.DataSource = value; this.Refresh(); }
             get { return  this.dt; }
         }
+        
+        public GridView GC { get { return this.gridView1; } }
+
+        public DataTable GCDS { get { return this.gridControl1.DataSource as DataTable; } }
 
         public void reflash()
         {
@@ -35,9 +41,7 @@ namespace SGsortCalaParam.working
 
         public NepCalaTable()
         {
-   
             InitializeComponent();
-
         }
         public string 
         JSDianshu {
