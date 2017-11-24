@@ -120,6 +120,8 @@ namespace SGsortCalaParam
 
         private void sb_extend_Click(object sender, EventArgs e)
         {
+            XtraTabPage xinka =
+this.xtraTabControl1.TabPages[this.xtraTabControl1.SelectedTabPageIndex];
             SaveFileDialog sflg = new SaveFileDialog();
             sflg.Filter = "Excel(*.xls)|*.xls|Excel(*.xlsx)|*.xlsx";
             if (sflg.ShowDialog() == System.Windows.Forms.DialogResult.Cancel)
@@ -138,7 +140,7 @@ namespace SGsortCalaParam
                 book = new NPOI.XSSF.UserModel.XSSFWorkbook();
             }
 
-            NPOI.SS.UserModel.ISheet sheet = book.CreateSheet("test_001");
+            NPOI.SS.UserModel.ISheet sheet = book.CreateSheet(xinka.Text);
 
             // 添加表头
             NPOI.SS.UserModel.IRow row = sheet.CreateRow(0);
@@ -293,7 +295,7 @@ namespace SGsortCalaParam
             cell1_1.SetCellValue("布设激发线数");
             NPOI.SS.UserModel.ICell cell111 = r1.CreateCell(13);
             cell111.SetCellType(NPOI.SS.UserModel.CellType.String);
-            cell111.SetCellValue(this.active_nepCalaTable.mobanpao.Text);
+            cell111.SetCellValue(this.active_nepCalaTable.bushe_jifaxianshu.Text);
 
 
 
@@ -335,6 +337,7 @@ namespace SGsortCalaParam
             XtraTabPage xinka =
                 this.xtraTabControl1.TabPages[this.xtraTabControl1.SelectedTabPageIndex];
             //Console.WriteLine( xinka.Controls[0]);
+            this.textEdit1.Text = xinka.Text;
             try
             { this.active_nepCalaTable = xinka.Controls[0] as NepCalaTable; }
             catch (Exception err)
@@ -359,10 +362,10 @@ namespace SGsortCalaParam
             int sheetCount = book.NumberOfSheets;
             for (int sheetIndex = 0; sheetIndex < sheetCount; sheetIndex++)
             {
-
+                string st_name =   book.GetSheetName(sheetIndex);
                 XtraTabPage xinka = new XtraTabPage();
                 xinka.Name = "xin";
-                xinka.Text = "新工作区";
+                xinka.Text = st_name;
                 NepCalaTable xintab = new NepCalaTable();
                 xintab.Dock = DockStyle.Fill;
                 xinka.Controls.Add(xintab);
@@ -465,11 +468,11 @@ namespace SGsortCalaParam
                     MessageBox.Show("出现了错误： " + err.Message);
                 }
                 aa += 1;
-
+                
                 //this.gridView1.ExportToXls(sflg.FileName);
                 //NPOI.xs book = new NPOI.HSSF.UserModel.HSSFWorkbook();
-                NPOI.SS.UserModel.ISheet sheet = book.CreateSheet(string.Format("test_{0}", aa));
-
+                //NPOI.SS.UserModel.ISheet sheet = book.CreateSheet(string.Format("test_{0}", aa));
+                NPOI.SS.UserModel.ISheet sheet = book.CreateSheet(xinka.Text);
                 // 添加表头
                 NPOI.SS.UserModel.IRow row = sheet.CreateRow(0);
                 int index = 0;
@@ -611,7 +614,7 @@ namespace SGsortCalaParam
                 cell1_1.SetCellValue("布设激发线数");
                 NPOI.SS.UserModel.ICell cell111 = r1.CreateCell(13);
                 cell111.SetCellType(NPOI.SS.UserModel.CellType.String);
-                cell111.SetCellValue(this.active_nepCalaTable.mobanpao.Text);
+                cell111.SetCellValue(this.active_nepCalaTable.bushe_jifaxianshu.Text);
 
 
                 // 写入 
