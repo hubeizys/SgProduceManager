@@ -620,7 +620,7 @@ namespace SGsortCalaParam.working
             dr["banjia_daoshu"] = Get搬家排列道数(i, Convert.ToInt32(dr["ke_caiji"]), Convert.ToInt32(dr["bushe_daoshu"]));
             dr["hengxiangchang"] = Get横向长度(Convert.ToInt32(dr["bushe_daoshu"]));
             dr["zongxiangchang"] = Get纵向长度();
-            dr["zonghengbi"] = Get纵横比(Convert.ToInt32(dr["hengxiangchang"]), Convert.ToInt32(dr["zongxiangchang"]));
+            dr["zonghengbi"] = Get纵横比(Convert.ToInt32(dr["zongxiangchang"]), Convert.ToInt32(dr["hengxiangchang"]));
             dr["paodaobi"] = Get炮道比(Convert.ToInt32(dr["ke_caiji"]), Convert.ToInt32(dr["bushe_zongdaoshu"]));
         }
 
@@ -773,7 +773,7 @@ namespace SGsortCalaParam.working
             dr["banjia_daoshu"] = Get搬家排列道数(i, Convert.ToInt32(dr["ke_caiji"]), Convert.ToInt32(dr["bushe_daoshu"]));
             dr["hengxiangchang"] = Get横向长度(Convert.ToInt32(dr["bushe_daoshu"]));
             dr["zongxiangchang"] = Get纵向长度();
-            dr["zonghengbi"] = Get纵横比(Convert.ToInt32(dr["hengxiangchang"]), Convert.ToInt32(dr["zongxiangchang"]));
+            dr["zonghengbi"] = Get纵横比( Convert.ToInt32(dr["zongxiangchang"]),Convert.ToInt32(dr["hengxiangchang"]));
             dr["paodaobi"] = Get炮道比(Convert.ToInt32(dr["ke_caiji"]), Convert.ToInt32(dr["bushe_zongdaoshu"]));
         }
 

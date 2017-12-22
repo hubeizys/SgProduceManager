@@ -466,7 +466,7 @@
             this.chartControl1.TabIndex = 0;
             chartTitle1.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Left;
             chartTitle1.Font = new System.Drawing.Font("Tahoma", 14F);
-            chartTitle1.Text = "投入采集设备";
+            chartTitle1.Text = "最大采集炮次";
             this.chartControl1.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle1});
             // 
@@ -527,7 +527,7 @@
             this.chartControl2.TabIndex = 1;
             chartTitle2.Dock = DevExpress.XtraCharts.ChartTitleDockStyle.Left;
             chartTitle2.Font = new System.Drawing.Font("Tahoma", 14F);
-            chartTitle2.Text = "最大采集炮次";
+            chartTitle2.Text = "投入采集设备";
             this.chartControl2.Titles.AddRange(new DevExpress.XtraCharts.ChartTitle[] {
             chartTitle2});
             // 
